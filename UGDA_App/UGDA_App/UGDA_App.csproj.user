@@ -4,5 +4,47 @@
     <Compile Update="Principal\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Principal\Login\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Principal\Menu\Bitacora\history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Principal\Menu\Documentos\documents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Principal\Menu\documents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Principal\Menu\Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Principal\Menu\Editar\Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Principal\Menu\history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Principal\Menu\home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Principal\Menu\Home\home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Principal\Menu\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Principal\Menu\main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Principal\Menu\Main\main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Principal\Menu\users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Principal\Menu\Usuarios\users.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
