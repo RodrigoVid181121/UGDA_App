@@ -19,7 +19,7 @@ namespace UGDA_App.Forms
         //Edit editar = new Edit();
         public Editar()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
 
         public void Limpiar()
@@ -35,24 +35,24 @@ namespace UGDA_App.Forms
 
         private void Cargar()
         {
-        //    editar.llenarcbseries(cbSeries);
-        //    editar.llenarcbseries(cbSer);
-        //    editar.llenarcbsubseries(cbSub);
-        //    editar.llenarcbsecciones(cbSecciones);
-        //    editar.llenarcbcodsubseries(comboBox1);
-        //    dt = editar.MostrarDatosSeries();
-        //    dt2 = editar.MostrarDatosSubSeries();
-        //    dgvseries.DataSource = dt;
-        //    dgvsub.DataSource = dt2;
-        //    dgvseries.AutoSizeColumnsMode= DataGridViewAutoSizeColumnsMode.AllCells;
-        //    dgvseries.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-        //    dgvsub.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-        //    dgvsub.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            //    editar.llenarcbseries(cbSeries);
+            //    editar.llenarcbseries(cbSer);
+            //    editar.llenarcbsubseries(cbSub);
+            //    editar.llenarcbsecciones(cbSecciones);
+            //    editar.llenarcbcodsubseries(comboBox1);
+            //    dt = editar.MostrarDatosSeries();
+            //    dt2 = editar.MostrarDatosSubSeries();
+            //    dgvseries.DataSource = dt;
+            //    dgvsub.DataSource = dt2;
+            //    dgvseries.AutoSizeColumnsMode= DataGridViewAutoSizeColumnsMode.AllCells;
+            //    dgvseries.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            //    dgvsub.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            //    dgvsub.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
         }
 
         private void AddSeries_Click(object sender, EventArgs e)
         {
-            if (cbSecciones.Text !="" && txtAñadir.Text != "")
+            if (cbSecciones.Text != "" && txtAñadir.Text != "")
             {
                 //if (editar.insertSeries(cbSecciones.Text.Trim(), txtAñadir.Text.Trim()))
                 //{
@@ -65,7 +65,7 @@ namespace UGDA_App.Forms
 
         private void ModSeries_Click(object sender, EventArgs e)
         {
-            if (cbSecciones.Text !="" && cbSeries.Text!="")
+            if (cbSecciones.Text != "" && cbSeries.Text != "")
             {
                 //if(editar.updateSeries(cbSecciones.Text.Trim(), cbSeries.Text.Trim()))
                 {
@@ -78,7 +78,7 @@ namespace UGDA_App.Forms
 
         private void addSub_Click(object sender, EventArgs e)
         {
-            if (cbSer.Text!="" && txtCod.Text !="" && txtSub.Text !="")
+            if (cbSer.Text != "" && txtCod.Text != "" && txtSub.Text != "")
             {
                 //if (editar.inserSubtSeries(cbSer.Text.Trim(), txtSub.Text.Trim(), txtCod.Text.Trim()))
                 {
@@ -91,7 +91,7 @@ namespace UGDA_App.Forms
 
         private void ModSub_Click(object sender, EventArgs e)
         {
-            if (cbSer.Text!="" && cbSub.Text!="")
+            if (cbSer.Text != "" && cbSub.Text != "")
             {
                 //if (editar.updateSubtSeries(cbSer.Text.Trim(), cbSub.Text.Trim()))
                 //{
@@ -133,7 +133,7 @@ namespace UGDA_App.Forms
 
         private void txtCod_TextChanged(object sender, EventArgs e)
         {
-            for(int i = 0; i<comboBox1.Items.Count; i++)
+            for (int i = 0; i < comboBox1.Items.Count; i++)
             {
                 if (txtCod.Text.Trim() != comboBox1.Items[i].ToString().Trim())
                 {

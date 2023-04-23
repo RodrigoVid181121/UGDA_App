@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(documents));
             tabBuscar = new TabControl();
             tabbus = new TabPage();
+            button2 = new Button();
             dgvbuscar = new DataGridView();
             paneluser = new Panel();
             cmbfiltro = new ComboBox();
@@ -55,7 +56,6 @@
             label5 = new Label();
             label3 = new Label();
             errorProvider1 = new ErrorProvider(components);
-            button2 = new Button();
             tabBuscar.SuspendLayout();
             tabbus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvbuscar).BeginInit();
@@ -72,13 +72,13 @@
             tabBuscar.Controls.Add(tabbus);
             tabBuscar.Controls.Add(tabedit);
             tabBuscar.Dock = DockStyle.Fill;
-            tabBuscar.ItemSize = new Size(90, 20);
+            tabBuscar.ItemSize = new Size(300, 50);
             tabBuscar.Location = new Point(0, 0);
-            tabBuscar.Margin = new Padding(4, 2, 4, 2);
+            tabBuscar.Margin = new Padding(0);
             tabBuscar.Name = "tabBuscar";
+            tabBuscar.Padding = new Point(2, 2);
             tabBuscar.SelectedIndex = 0;
             tabBuscar.Size = new Size(1475, 1079);
-            tabBuscar.SizeMode = TabSizeMode.Fixed;
             tabBuscar.TabIndex = 0;
             // 
             // tabbus
@@ -87,14 +87,29 @@
             tabbus.Controls.Add(button2);
             tabbus.Controls.Add(dgvbuscar);
             tabbus.Controls.Add(paneluser);
-            tabbus.Location = new Point(4, 24);
-            tabbus.Margin = new Padding(4, 2, 4, 2);
+            tabbus.Location = new Point(4, 54);
+            tabbus.Margin = new Padding(1);
             tabbus.Name = "tabbus";
-            tabbus.Padding = new Padding(4, 2, 4, 2);
-            tabbus.Size = new Size(1467, 1051);
+            tabbus.Padding = new Padding(1);
+            tabbus.Size = new Size(1467, 1021);
             tabbus.TabIndex = 0;
             tabbus.Text = "Buscar";
             tabbus.Click += tabbus_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(0, 0, 64);
+            button2.FlatAppearance.BorderColor = SystemColors.ActiveCaption;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.ForeColor = Color.WhiteSmoke;
+            button2.Location = new Point(854, 861);
+            button2.Margin = new Padding(4, 2, 4, 2);
+            button2.Name = "button2";
+            button2.Size = new Size(498, 70);
+            button2.TabIndex = 10;
+            button2.Text = "Imprimir Actual";
+            button2.UseVisualStyleBackColor = false;
             // 
             // dgvbuscar
             // 
@@ -103,7 +118,7 @@
             dgvbuscar.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dgvbuscar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvbuscar.Location = new Point(61, 239);
-            dgvbuscar.Margin = new Padding(6, 6, 6, 6);
+            dgvbuscar.Margin = new Padding(6);
             dgvbuscar.Name = "dgvbuscar";
             dgvbuscar.RowHeadersVisible = false;
             dgvbuscar.RowHeadersWidth = 82;
@@ -127,12 +142,13 @@
             // 
             // cmbfiltro
             // 
+            cmbfiltro.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             cmbfiltro.FormattingEnabled = true;
             cmbfiltro.Items.AddRange(new object[] { "Código", "Año", "Ubicación", "Descripción" });
-            cmbfiltro.Location = new Point(793, 38);
-            cmbfiltro.Margin = new Padding(6, 6, 6, 6);
+            cmbfiltro.Location = new Point(793, 32);
+            cmbfiltro.Margin = new Padding(6);
             cmbfiltro.Name = "cmbfiltro";
-            cmbfiltro.Size = new Size(277, 40);
+            cmbfiltro.Size = new Size(277, 55);
             cmbfiltro.TabIndex = 9;
             // 
             // btneliminar
@@ -180,11 +196,11 @@
             // 
             tabedit.BackColor = Color.WhiteSmoke;
             tabedit.Controls.Add(panel1);
-            tabedit.Location = new Point(4, 24);
-            tabedit.Margin = new Padding(4, 2, 4, 2);
+            tabedit.Location = new Point(4, 54);
+            tabedit.Margin = new Padding(2);
             tabedit.Name = "tabedit";
-            tabedit.Padding = new Padding(4, 2, 4, 2);
-            tabedit.Size = new Size(1467, 1051);
+            tabedit.Padding = new Padding(2);
+            tabedit.Size = new Size(1467, 1021);
             tabedit.TabIndex = 1;
             tabedit.Text = "Formulario";
             // 
@@ -205,10 +221,10 @@
             panel1.Controls.Add(cbSubS);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label3);
-            panel1.Location = new Point(4, 6);
-            panel1.Margin = new Padding(4, 2, 4, 2);
+            panel1.Location = new Point(4, 0);
+            panel1.Margin = new Padding(1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1475, 1079);
+            panel1.Size = new Size(1457, 1055);
             panel1.TabIndex = 1;
             // 
             // button1
@@ -410,21 +426,6 @@
             // errorProvider1
             // 
             errorProvider1.ContainerControl = this;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.FromArgb(0, 0, 64);
-            button2.FlatAppearance.BorderColor = SystemColors.ActiveCaption;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.ForeColor = Color.WhiteSmoke;
-            button2.Location = new Point(854, 866);
-            button2.Margin = new Padding(4, 2, 4, 2);
-            button2.Name = "button2";
-            button2.Size = new Size(498, 70);
-            button2.TabIndex = 10;
-            button2.Text = "Imprimir Actual";
-            button2.UseVisualStyleBackColor = false;
             // 
             // documents
             // 

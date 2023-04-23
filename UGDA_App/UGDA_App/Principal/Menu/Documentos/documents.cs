@@ -82,15 +82,15 @@ namespace UGDA_App
             string codigo = txtcod.Text.Trim();
             if (cbSubS.Text != "" && cbUnidad.Text != "" && txtubicacion.Text.Trim() != "" && txtaño.Text.Trim() != "" && txtdescripcion.Text.Trim() != "")
             {
-            //    if (doc.InsertarDoc(cbSubS.Text.Trim(), cbUnidad.Text.Trim(), txtubicacion.Text.Trim(), txtaño.Text.Trim(), txtdescripcion.Text.Trim(), Global.carnet_usuario))
-            //    {
-            //        MessageBox.Show("Se ha ingresado el documento " + Global.codigo_documento, "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //        limpiar();
-            //        cargarTabla();
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Ha ocurrido un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //    if (doc.InsertarDoc(cbSubS.Text.Trim(), cbUnidad.Text.Trim(), txtubicacion.Text.Trim(), txtaño.Text.Trim(), txtdescripcion.Text.Trim(), Global.carnet_usuario))
+                //    {
+                //        MessageBox.Show("Se ha ingresado el documento " + Global.codigo_documento, "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //        limpiar();
+                //        cargarTabla();
+                //    }
+                //    else
+                //    {
+                //        MessageBox.Show("Ha ocurrido un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 //}
             }
             else

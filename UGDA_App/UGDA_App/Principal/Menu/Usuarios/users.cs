@@ -68,7 +68,7 @@ namespace UGDA_App
 
         private void btnAñadir_Click(object sender, EventArgs e)
         {
-            if (cbcargo.Text == "" || txtnom.Text == "" || txtapellido.Text == "" || txtcorreo.Text == "" || txtcarnet.Text == "" || txtcontra.Text =="" ||txtConf.Text=="")
+            if (cbcargo.Text == "" || txtnom.Text == "" || txtapellido.Text == "" || txtcorreo.Text == "" || txtcarnet.Text == "" || txtcontra.Text == "" || txtConf.Text == "")
             {
                 MessageBox.Show("Por favor rellene todos los campos para continuar", "Información", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
             }
@@ -263,24 +263,24 @@ namespace UGDA_App
         private void txtapellido_Leave(object sender, EventArgs e)
         {
             var Random = new Random();
-            string num=null;
+            string num = null;
             for (int i = 0; i < 4; i++)
             {
-                num += Random.Next(0,9).ToString();
+                num += Random.Next(0, 9).ToString();
             }
-            string ap = txtapellido.Text.Substring(0,1);
-            string nom= txtnom.Text.Substring(0,1);
-            string carnet= ap + nom+num;
+            string ap = txtapellido.Text.Substring(0, 1);
+            string nom = txtnom.Text.Substring(0, 1);
+            string carnet = ap + nom + num;
             txtcarnet.Text = carnet;
         }
 
         private void txtBuscar_TextChanged_1(object sender, EventArgs e)
         {
-            if(cmbfiltro.SelectedIndex == 0)
+            if (cmbfiltro.SelectedIndex == 0)
             {
                 dt.DefaultView.RowFilter = $"Carnet LIKE '{txtBuscar.Text}%'";
             }
-            else if(cmbfiltro.SelectedIndex == 1)
+            else if (cmbfiltro.SelectedIndex == 1)
             {
                 dt.DefaultView.RowFilter = $"Nombre LIKE '{txtBuscar.Text}%'";
             }
