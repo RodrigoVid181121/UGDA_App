@@ -78,7 +78,7 @@
             tabBuscar.Name = "tabBuscar";
             tabBuscar.Padding = new Point(2, 2);
             tabBuscar.SelectedIndex = 0;
-            tabBuscar.Size = new Size(1475, 1079);
+            tabBuscar.Size = new Size(794, 506);
             tabBuscar.TabIndex = 0;
             // 
             // tabbus
@@ -88,10 +88,10 @@
             tabbus.Controls.Add(dgvbuscar);
             tabbus.Controls.Add(paneluser);
             tabbus.Location = new Point(4, 54);
-            tabbus.Margin = new Padding(1);
+            tabbus.Margin = new Padding(1, 0, 1, 0);
             tabbus.Name = "tabbus";
-            tabbus.Padding = new Padding(1);
-            tabbus.Size = new Size(1467, 1021);
+            tabbus.Padding = new Padding(1, 0, 1, 0);
+            tabbus.Size = new Size(786, 448);
             tabbus.TabIndex = 0;
             tabbus.Text = "Buscar";
             tabbus.Click += tabbus_Click;
@@ -103,10 +103,10 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button2.ForeColor = Color.WhiteSmoke;
-            button2.Location = new Point(854, 861);
-            button2.Margin = new Padding(4, 2, 4, 2);
+            button2.Location = new Point(460, 404);
+            button2.Margin = new Padding(2, 1, 2, 1);
             button2.Name = "button2";
-            button2.Size = new Size(498, 70);
+            button2.Size = new Size(268, 33);
             button2.TabIndex = 10;
             button2.Text = "Imprimir Actual";
             button2.UseVisualStyleBackColor = false;
@@ -117,13 +117,12 @@
             dgvbuscar.BackgroundColor = Color.FromArgb(0, 0, 64);
             dgvbuscar.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dgvbuscar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvbuscar.Location = new Point(61, 239);
-            dgvbuscar.Margin = new Padding(6);
+            dgvbuscar.Location = new Point(33, 112);
             dgvbuscar.Name = "dgvbuscar";
             dgvbuscar.RowHeadersVisible = false;
             dgvbuscar.RowHeadersWidth = 82;
             dgvbuscar.RowTemplate.Height = 25;
-            dgvbuscar.Size = new Size(1339, 604);
+            dgvbuscar.Size = new Size(721, 283);
             dgvbuscar.TabIndex = 5;
             dgvbuscar.CellClick += dgvbuscar_CellClick;
             // 
@@ -134,10 +133,10 @@
             paneluser.Controls.Add(btneliminar);
             paneluser.Controls.Add(txtbuscar);
             paneluser.Controls.Add(pictureBox2);
-            paneluser.Location = new Point(61, 81);
-            paneluser.Margin = new Padding(4, 2, 4, 2);
+            paneluser.Location = new Point(33, 38);
+            paneluser.Margin = new Padding(2, 1, 2, 1);
             paneluser.Name = "paneluser";
-            paneluser.Size = new Size(1339, 122);
+            paneluser.Size = new Size(721, 57);
             paneluser.TabIndex = 4;
             // 
             // cmbfiltro
@@ -145,10 +144,9 @@
             cmbfiltro.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             cmbfiltro.FormattingEnabled = true;
             cmbfiltro.Items.AddRange(new object[] { "Código", "Año", "Ubicación", "Descripción" });
-            cmbfiltro.Location = new Point(793, 32);
-            cmbfiltro.Margin = new Padding(6);
+            cmbfiltro.Location = new Point(427, 15);
             cmbfiltro.Name = "cmbfiltro";
-            cmbfiltro.Size = new Size(277, 55);
+            cmbfiltro.Size = new Size(151, 31);
             cmbfiltro.TabIndex = 9;
             // 
             // btneliminar
@@ -158,10 +156,10 @@
             btneliminar.FlatStyle = FlatStyle.Flat;
             btneliminar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btneliminar.ForeColor = Color.WhiteSmoke;
-            btneliminar.Location = new Point(1137, 28);
-            btneliminar.Margin = new Padding(4, 2, 4, 2);
+            btneliminar.Location = new Point(612, 13);
+            btneliminar.Margin = new Padding(2, 1, 2, 1);
             btneliminar.Name = "btneliminar";
-            btneliminar.Size = new Size(154, 70);
+            btneliminar.Size = new Size(83, 33);
             btneliminar.TabIndex = 8;
             btneliminar.Text = "Eliminar";
             btneliminar.UseVisualStyleBackColor = false;
@@ -172,22 +170,22 @@
             txtbuscar.BackColor = SystemColors.ButtonFace;
             txtbuscar.BorderStyle = BorderStyle.None;
             txtbuscar.Font = new Font("Segoe UI", 13.875F, FontStyle.Regular, GraphicsUnit.Point);
-            txtbuscar.Location = new Point(176, 34);
-            txtbuscar.Margin = new Padding(4, 2, 4, 2);
+            txtbuscar.Location = new Point(95, 16);
+            txtbuscar.Margin = new Padding(2, 1, 2, 1);
             txtbuscar.Multiline = true;
             txtbuscar.Name = "txtbuscar";
             txtbuscar.PlaceholderText = "Buscar documento";
-            txtbuscar.Size = new Size(579, 53);
+            txtbuscar.Size = new Size(312, 25);
             txtbuscar.TabIndex = 6;
             txtbuscar.TextChanged += txtbuscar_TextChanged_1;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(46, 34);
-            pictureBox2.Margin = new Padding(4, 2, 4, 2);
+            pictureBox2.Location = new Point(25, 16);
+            pictureBox2.Margin = new Padding(2, 1, 2, 1);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(78, 53);
+            pictureBox2.Size = new Size(42, 25);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 4;
             pictureBox2.TabStop = false;
@@ -197,10 +195,10 @@
             tabedit.BackColor = Color.WhiteSmoke;
             tabedit.Controls.Add(panel1);
             tabedit.Location = new Point(4, 54);
-            tabedit.Margin = new Padding(2);
+            tabedit.Margin = new Padding(1, 1, 1, 1);
             tabedit.Name = "tabedit";
-            tabedit.Padding = new Padding(2);
-            tabedit.Size = new Size(1467, 1021);
+            tabedit.Padding = new Padding(1, 1, 1, 1);
+            tabedit.Size = new Size(786, 448);
             tabedit.TabIndex = 1;
             tabedit.Text = "Formulario";
             // 
@@ -221,10 +219,10 @@
             panel1.Controls.Add(cbSubS);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label3);
-            panel1.Location = new Point(4, 0);
-            panel1.Margin = new Padding(1);
+            panel1.Location = new Point(2, 0);
+            panel1.Margin = new Padding(1, 0, 1, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1457, 1055);
+            panel1.Size = new Size(785, 495);
             panel1.TabIndex = 1;
             // 
             // button1
@@ -234,10 +232,10 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = Color.WhiteSmoke;
-            button1.Location = new Point(641, 742);
-            button1.Margin = new Padding(4, 2, 4, 2);
+            button1.Location = new Point(345, 348);
+            button1.Margin = new Padding(2, 1, 2, 1);
             button1.Name = "button1";
-            button1.Size = new Size(197, 81);
+            button1.Size = new Size(106, 38);
             button1.TabIndex = 26;
             button1.Text = "Actualizar";
             button1.UseVisualStyleBackColor = false;
@@ -250,10 +248,10 @@
             btnguardar.FlatStyle = FlatStyle.Flat;
             btnguardar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnguardar.ForeColor = Color.WhiteSmoke;
-            btnguardar.Location = new Point(897, 742);
-            btnguardar.Margin = new Padding(4, 2, 4, 2);
+            btnguardar.Location = new Point(483, 348);
+            btnguardar.Margin = new Padding(2, 1, 2, 1);
             btnguardar.Name = "btnguardar";
-            btnguardar.Size = new Size(197, 81);
+            btnguardar.Size = new Size(106, 38);
             btnguardar.TabIndex = 25;
             btnguardar.Text = "Guardar";
             btnguardar.UseVisualStyleBackColor = false;
@@ -266,10 +264,10 @@
             btncancelar.FlatStyle = FlatStyle.Flat;
             btncancelar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btncancelar.ForeColor = Color.WhiteSmoke;
-            btncancelar.Location = new Point(375, 742);
-            btncancelar.Margin = new Padding(4, 2, 4, 2);
+            btncancelar.Location = new Point(202, 348);
+            btncancelar.Margin = new Padding(2, 1, 2, 1);
             btncancelar.Name = "btncancelar";
-            btncancelar.Size = new Size(197, 81);
+            btncancelar.Size = new Size(106, 38);
             btncancelar.TabIndex = 24;
             btncancelar.Text = "Cancelar";
             btncancelar.UseVisualStyleBackColor = false;
@@ -285,10 +283,10 @@
             cbUnidad.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cbUnidad.FormattingEnabled = true;
             cbUnidad.IntegralHeight = false;
-            cbUnidad.Location = new Point(763, 117);
-            cbUnidad.Margin = new Padding(4, 2, 4, 2);
+            cbUnidad.Location = new Point(411, 55);
+            cbUnidad.Margin = new Padding(2, 1, 2, 1);
             cbUnidad.Name = "cbUnidad";
-            cbUnidad.Size = new Size(595, 53);
+            cbUnidad.Size = new Size(322, 29);
             cbUnidad.TabIndex = 23;
             // 
             // txtdescripcion
@@ -296,12 +294,12 @@
             txtdescripcion.BackColor = Color.WhiteSmoke;
             txtdescripcion.BorderStyle = BorderStyle.None;
             txtdescripcion.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            txtdescripcion.Location = new Point(82, 390);
-            txtdescripcion.Margin = new Padding(4, 2, 4, 2);
+            txtdescripcion.Location = new Point(44, 183);
+            txtdescripcion.Margin = new Padding(2, 1, 2, 1);
             txtdescripcion.MaxLength = 255;
             txtdescripcion.Multiline = true;
             txtdescripcion.Name = "txtdescripcion";
-            txtdescripcion.Size = new Size(1280, 267);
+            txtdescripcion.Size = new Size(689, 125);
             txtdescripcion.TabIndex = 22;
             // 
             // label9
@@ -309,10 +307,10 @@
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label9.ForeColor = Color.WhiteSmoke;
-            label9.Location = new Point(82, 335);
-            label9.Margin = new Padding(4, 0, 4, 0);
+            label9.Location = new Point(44, 157);
+            label9.Margin = new Padding(2, 0, 2, 0);
             label9.Name = "label9";
-            label9.Size = new Size(232, 51);
+            label9.Size = new Size(117, 25);
             label9.TabIndex = 21;
             label9.Text = "Descripcion:";
             // 
@@ -321,11 +319,11 @@
             txtaño.BackColor = Color.WhiteSmoke;
             txtaño.BorderStyle = BorderStyle.None;
             txtaño.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            txtaño.Location = new Point(763, 239);
-            txtaño.Margin = new Padding(4, 2, 4, 2);
+            txtaño.Location = new Point(411, 112);
+            txtaño.Margin = new Padding(2, 1, 2, 1);
             txtaño.MaxLength = 4;
             txtaño.Name = "txtaño";
-            txtaño.Size = new Size(598, 50);
+            txtaño.Size = new Size(322, 25);
             txtaño.TabIndex = 20;
             txtaño.KeyPress += txtaño_KeyPress;
             // 
@@ -334,10 +332,10 @@
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = Color.WhiteSmoke;
-            label8.Location = new Point(763, 183);
-            label8.Margin = new Padding(4, 0, 4, 0);
+            label8.Location = new Point(411, 86);
+            label8.Margin = new Padding(2, 0, 2, 0);
             label8.Name = "label8";
-            label8.Size = new Size(102, 51);
+            label8.Size = new Size(52, 25);
             label8.TabIndex = 19;
             label8.Text = "Año:";
             // 
@@ -346,10 +344,10 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.WhiteSmoke;
-            label7.Location = new Point(763, 62);
-            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Location = new Point(411, 29);
+            label7.Margin = new Padding(2, 0, 2, 0);
             label7.Name = "label7";
-            label7.Size = new Size(359, 51);
+            label7.Size = new Size(178, 25);
             label7.TabIndex = 17;
             label7.Text = "Unidad Productora:";
             // 
@@ -359,11 +357,11 @@
             txtubicacion.BorderStyle = BorderStyle.None;
             txtubicacion.CharacterCasing = CharacterCasing.Upper;
             txtubicacion.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            txtubicacion.Location = new Point(82, 239);
-            txtubicacion.Margin = new Padding(4, 2, 4, 2);
+            txtubicacion.Location = new Point(44, 112);
+            txtubicacion.Margin = new Padding(2, 1, 2, 1);
             txtubicacion.MaxLength = 25;
             txtubicacion.Name = "txtubicacion";
-            txtubicacion.Size = new Size(598, 50);
+            txtubicacion.Size = new Size(322, 25);
             txtubicacion.TabIndex = 10;
             txtubicacion.TextChanged += txtubicacion_TextChanged;
             // 
@@ -372,10 +370,10 @@
             txtcod.BackColor = Color.WhiteSmoke;
             txtcod.BorderStyle = BorderStyle.None;
             txtcod.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            txtcod.Location = new Point(82, 755);
-            txtcod.Margin = new Padding(4, 2, 4, 2);
+            txtcod.Location = new Point(44, 354);
+            txtcod.Margin = new Padding(2, 1, 2, 1);
             txtcod.Name = "txtcod";
-            txtcod.Size = new Size(149, 50);
+            txtcod.Size = new Size(80, 25);
             txtcod.TabIndex = 9;
             // 
             // cbSubS
@@ -389,10 +387,10 @@
             cbSubS.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cbSubS.FormattingEnabled = true;
             cbSubS.IntegralHeight = false;
-            cbSubS.Location = new Point(82, 119);
-            cbSubS.Margin = new Padding(4, 2, 4, 2);
+            cbSubS.Location = new Point(44, 56);
+            cbSubS.Margin = new Padding(2, 1, 2, 1);
             cbSubS.Name = "cbSubS";
-            cbSubS.Size = new Size(595, 53);
+            cbSubS.Size = new Size(322, 29);
             cbSubS.TabIndex = 3;
             cbSubS.SelectedIndexChanged += cbSubS_SelectedIndexChanged;
             cbSubS.SelectionChangeCommitted += cbSubS_SelectionChangeCommitted;
@@ -404,10 +402,10 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(82, 183);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Location = new Point(44, 86);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(202, 51);
+            label5.Size = new Size(101, 25);
             label5.TabIndex = 6;
             label5.Text = "Ubicacion:";
             // 
@@ -416,10 +414,10 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.WhiteSmoke;
-            label3.Location = new Point(82, 62);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(44, 29);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(197, 51);
+            label3.Size = new Size(99, 25);
             label3.TabIndex = 4;
             label3.Text = "Sub-Serie:";
             // 
@@ -429,13 +427,13 @@
             // 
             // documents
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(1475, 1079);
+            ClientSize = new Size(794, 506);
             Controls.Add(tabBuscar);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4, 2, 4, 2);
+            Margin = new Padding(2, 1, 2, 1);
             Name = "documents";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "buscar";

@@ -38,20 +38,20 @@ namespace UGDA_App
             {
                 dt.DefaultView.RowFilter = $"Evento LIKE '{txtbuscar.Text}%'";
             }
-            
+
             //Filtrar por Usuario
             if (cmbfiltro.SelectedIndex == 1)
             {
                 dt.DefaultView.RowFilter = $"Usuario LIKE '{txtbuscar.Text}%'";
             }
-            
+
             //Filtrar por fecha
             if (cmbfiltro.SelectedIndex == 2)
             {
                 dt.DefaultView.RowFilter = $"Fecha LIKE '{txtbuscar.Text}%'";
             }
         }
-            
-        
+
+
     }
 }

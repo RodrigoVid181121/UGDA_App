@@ -70,10 +70,10 @@
             tabControl1.Dock = DockStyle.Fill;
             tabControl1.ItemSize = new Size(200, 50);
             tabControl1.Location = new Point(0, 0);
-            tabControl1.Margin = new Padding(4, 2, 4, 2);
+            tabControl1.Margin = new Padding(2, 1, 2, 1);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1475, 1079);
+            tabControl1.Size = new Size(794, 506);
             tabControl1.TabIndex = 1;
             // 
             // tbSeries
@@ -89,10 +89,10 @@
             tbSeries.Controls.Add(cbSecciones);
             tbSeries.Controls.Add(dgvseries);
             tbSeries.Location = new Point(4, 54);
-            tbSeries.Margin = new Padding(4, 2, 4, 2);
+            tbSeries.Margin = new Padding(2, 1, 2, 1);
             tbSeries.Name = "tbSeries";
-            tbSeries.Padding = new Padding(4, 2, 4, 2);
-            tbSeries.Size = new Size(1467, 1021);
+            tbSeries.Padding = new Padding(2, 1, 2, 1);
+            tbSeries.Size = new Size(786, 448);
             tbSeries.TabIndex = 0;
             tbSeries.Text = "Series";
             // 
@@ -101,10 +101,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.WhiteSmoke;
-            label3.Location = new Point(163, 269);
-            label3.Margin = new Padding(6, 0, 6, 0);
+            label3.Location = new Point(88, 126);
             label3.Name = "label3";
-            label3.Size = new Size(269, 51);
+            label3.Size = new Size(135, 25);
             label3.TabIndex = 31;
             label3.Text = "Nombre Serie:";
             // 
@@ -113,10 +112,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.WhiteSmoke;
-            label2.Location = new Point(163, 154);
-            label2.Margin = new Padding(6, 0, 6, 0);
+            label2.Location = new Point(88, 72);
             label2.Name = "label2";
-            label2.Size = new Size(132, 51);
+            label2.Size = new Size(67, 25);
             label2.TabIndex = 30;
             label2.Text = "Series:";
             // 
@@ -125,10 +123,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.WhiteSmoke;
-            label1.Location = new Point(163, 36);
-            label1.Margin = new Padding(6, 0, 6, 0);
+            label1.Location = new Point(88, 17);
             label1.Name = "label1";
-            label1.Size = new Size(163, 51);
+            label1.Size = new Size(82, 25);
             label1.TabIndex = 29;
             label1.Text = "Sección:";
             // 
@@ -137,11 +134,11 @@
             txtAñadir.BackColor = Color.WhiteSmoke;
             txtAñadir.BorderStyle = BorderStyle.None;
             txtAñadir.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            txtAñadir.Location = new Point(444, 269);
-            txtAñadir.Margin = new Padding(4, 2, 4, 2);
+            txtAñadir.Location = new Point(239, 126);
+            txtAñadir.Margin = new Padding(2, 1, 2, 1);
             txtAñadir.MaxLength = 200;
             txtAñadir.Name = "txtAñadir";
-            txtAñadir.Size = new Size(639, 50);
+            txtAñadir.Size = new Size(344, 25);
             txtAñadir.TabIndex = 15;
             txtAñadir.TextChanged += txtAñadir_TextChanged;
             // 
@@ -152,10 +149,10 @@
             AddSeries.FlatStyle = FlatStyle.Flat;
             AddSeries.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             AddSeries.ForeColor = Color.WhiteSmoke;
-            AddSeries.Location = new Point(1137, 154);
-            AddSeries.Margin = new Padding(4, 2, 4, 2);
+            AddSeries.Location = new Point(612, 72);
+            AddSeries.Margin = new Padding(2, 1, 2, 1);
             AddSeries.Name = "AddSeries";
-            AddSeries.Size = new Size(186, 70);
+            AddSeries.Size = new Size(100, 33);
             AddSeries.TabIndex = 14;
             AddSeries.Text = "Añadir";
             AddSeries.UseVisualStyleBackColor = false;
@@ -168,10 +165,10 @@
             ModSeries.FlatStyle = FlatStyle.Flat;
             ModSeries.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             ModSeries.ForeColor = Color.WhiteSmoke;
-            ModSeries.Location = new Point(1137, 36);
-            ModSeries.Margin = new Padding(4, 2, 4, 2);
+            ModSeries.Location = new Point(612, 17);
+            ModSeries.Margin = new Padding(2, 1, 2, 1);
             ModSeries.Name = "ModSeries";
-            ModSeries.Size = new Size(186, 70);
+            ModSeries.Size = new Size(100, 33);
             ModSeries.TabIndex = 13;
             ModSeries.Text = "Modificar";
             ModSeries.UseVisualStyleBackColor = false;
@@ -188,10 +185,10 @@
             cbSeries.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cbSeries.FormattingEnabled = true;
             cbSeries.IntegralHeight = false;
-            cbSeries.Location = new Point(444, 154);
-            cbSeries.Margin = new Padding(4, 2, 4, 2);
+            cbSeries.Location = new Point(239, 72);
+            cbSeries.Margin = new Padding(2, 1, 2, 1);
             cbSeries.Name = "cbSeries";
-            cbSeries.Size = new Size(635, 53);
+            cbSeries.Size = new Size(344, 29);
             cbSeries.TabIndex = 12;
             cbSeries.SelectedIndexChanged += cbSeries_SelectedIndexChanged;
             // 
@@ -206,10 +203,10 @@
             cbSecciones.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cbSecciones.FormattingEnabled = true;
             cbSecciones.IntegralHeight = false;
-            cbSecciones.Location = new Point(444, 45);
-            cbSecciones.Margin = new Padding(4, 2, 4, 2);
+            cbSecciones.Location = new Point(239, 21);
+            cbSecciones.Margin = new Padding(2, 1, 2, 1);
             cbSecciones.Name = "cbSecciones";
-            cbSecciones.Size = new Size(635, 53);
+            cbSecciones.Size = new Size(344, 29);
             cbSecciones.TabIndex = 11;
             cbSecciones.SelectedIndexChanged += cbSecciones_SelectedIndexChanged;
             // 
@@ -223,13 +220,13 @@
             dgvseries.CellBorderStyle = DataGridViewCellBorderStyle.None;
             dgvseries.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvseries.GridColor = Color.Peru;
-            dgvseries.Location = new Point(100, 393);
-            dgvseries.Margin = new Padding(4, 2, 4, 2);
+            dgvseries.Location = new Point(54, 184);
+            dgvseries.Margin = new Padding(2, 1, 2, 1);
             dgvseries.Name = "dgvseries";
             dgvseries.ReadOnly = true;
             dgvseries.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             dgvseries.RowTemplate.Height = 41;
-            dgvseries.Size = new Size(1259, 446);
+            dgvseries.Size = new Size(678, 209);
             dgvseries.TabIndex = 10;
             // 
             // tbSubseries
@@ -248,11 +245,11 @@
             tbSubseries.Controls.Add(cbSub);
             tbSubseries.Controls.Add(cbSer);
             tbSubseries.ForeColor = SystemColors.ControlDarkDark;
-            tbSubseries.Location = new Point(4, 24);
-            tbSubseries.Margin = new Padding(4, 2, 4, 2);
+            tbSubseries.Location = new Point(4, 54);
+            tbSubseries.Margin = new Padding(2, 1, 2, 1);
             tbSubseries.Name = "tbSubseries";
-            tbSubseries.Padding = new Padding(4, 2, 4, 2);
-            tbSubseries.Size = new Size(1467, 1051);
+            tbSubseries.Padding = new Padding(2, 1, 2, 1);
+            tbSubseries.Size = new Size(786, 448);
             tbSubseries.TabIndex = 1;
             tbSubseries.Text = "SubSeries";
             tbSubseries.Click += tbSubseries_Click;
@@ -267,13 +264,13 @@
             dgvsub.CellBorderStyle = DataGridViewCellBorderStyle.None;
             dgvsub.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvsub.GridColor = Color.Peru;
-            dgvsub.Location = new Point(100, 390);
-            dgvsub.Margin = new Padding(4, 2, 4, 2);
+            dgvsub.Location = new Point(54, 183);
+            dgvsub.Margin = new Padding(2, 1, 2, 1);
             dgvsub.Name = "dgvsub";
             dgvsub.ReadOnly = true;
             dgvsub.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             dgvsub.RowTemplate.Height = 41;
-            dgvsub.Size = new Size(1259, 446);
+            dgvsub.Size = new Size(678, 209);
             dgvsub.TabIndex = 37;
             // 
             // comboBox1
@@ -284,10 +281,10 @@
             comboBox1.FlatStyle = FlatStyle.Flat;
             comboBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(156, 877);
-            comboBox1.Margin = new Padding(4, 2, 4, 2);
+            comboBox1.Location = new Point(84, 411);
+            comboBox1.Margin = new Padding(2, 1, 2, 1);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(635, 53);
+            comboBox1.Size = new Size(344, 29);
             comboBox1.TabIndex = 36;
             comboBox1.Visible = false;
             // 
@@ -296,10 +293,9 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.WhiteSmoke;
-            label7.Location = new Point(802, 269);
-            label7.Margin = new Padding(6, 0, 6, 0);
+            label7.Location = new Point(432, 126);
             label7.Name = "label7";
-            label7.Size = new Size(157, 51);
+            label7.Size = new Size(78, 25);
             label7.TabIndex = 35;
             label7.Text = "Código:";
             // 
@@ -308,10 +304,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.WhiteSmoke;
-            label4.Location = new Point(35, 269);
-            label4.Margin = new Padding(6, 0, 6, 0);
+            label4.Location = new Point(19, 126);
             label4.Name = "label4";
-            label4.Size = new Size(335, 51);
+            label4.Size = new Size(167, 25);
             label4.TabIndex = 34;
             label4.Text = "Nombre SubSerie:";
             // 
@@ -320,10 +315,9 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(35, 154);
-            label5.Margin = new Padding(6, 0, 6, 0);
+            label5.Location = new Point(19, 72);
             label5.Name = "label5";
-            label5.Size = new Size(208, 51);
+            label5.Size = new Size(104, 25);
             label5.TabIndex = 33;
             label5.Text = "Sub Series:";
             // 
@@ -332,10 +326,9 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.WhiteSmoke;
-            label6.Location = new Point(35, 36);
-            label6.Margin = new Padding(6, 0, 6, 0);
+            label6.Location = new Point(19, 17);
             label6.Name = "label6";
-            label6.Size = new Size(132, 51);
+            label6.Size = new Size(67, 25);
             label6.TabIndex = 32;
             label6.Text = "Series:";
             // 
@@ -345,11 +338,11 @@
             txtCod.BorderStyle = BorderStyle.None;
             txtCod.CharacterCasing = CharacterCasing.Upper;
             txtCod.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCod.Location = new Point(964, 269);
-            txtCod.Margin = new Padding(4, 2, 4, 2);
+            txtCod.Location = new Point(519, 126);
+            txtCod.Margin = new Padding(2, 1, 2, 1);
             txtCod.MaxLength = 5;
             txtCod.Name = "txtCod";
-            txtCod.Size = new Size(355, 50);
+            txtCod.Size = new Size(191, 25);
             txtCod.TabIndex = 22;
             txtCod.TextChanged += txtCod_TextChanged;
             // 
@@ -358,11 +351,11 @@
             txtSub.BackColor = Color.WhiteSmoke;
             txtSub.BorderStyle = BorderStyle.None;
             txtSub.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            txtSub.Location = new Point(371, 269);
-            txtSub.Margin = new Padding(4, 2, 4, 2);
+            txtSub.Location = new Point(200, 126);
+            txtSub.Margin = new Padding(2, 1, 2, 1);
             txtSub.MaxLength = 200;
             txtSub.Name = "txtSub";
-            txtSub.Size = new Size(392, 50);
+            txtSub.Size = new Size(211, 25);
             txtSub.TabIndex = 21;
             // 
             // addSub
@@ -372,10 +365,10 @@
             addSub.FlatStyle = FlatStyle.Flat;
             addSub.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             addSub.ForeColor = Color.WhiteSmoke;
-            addSub.Location = new Point(1133, 154);
-            addSub.Margin = new Padding(4, 2, 4, 2);
+            addSub.Location = new Point(610, 72);
+            addSub.Margin = new Padding(2, 1, 2, 1);
             addSub.Name = "addSub";
-            addSub.Size = new Size(186, 70);
+            addSub.Size = new Size(100, 33);
             addSub.TabIndex = 20;
             addSub.Text = "Añadir";
             addSub.UseVisualStyleBackColor = false;
@@ -388,10 +381,10 @@
             ModSub.FlatStyle = FlatStyle.Flat;
             ModSub.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             ModSub.ForeColor = Color.WhiteSmoke;
-            ModSub.Location = new Point(1133, 36);
-            ModSub.Margin = new Padding(4, 2, 4, 2);
+            ModSub.Location = new Point(610, 17);
+            ModSub.Margin = new Padding(2, 1, 2, 1);
             ModSub.Name = "ModSub";
-            ModSub.Size = new Size(186, 70);
+            ModSub.Size = new Size(100, 33);
             ModSub.TabIndex = 19;
             ModSub.Text = "Modificar";
             ModSub.UseVisualStyleBackColor = false;
@@ -408,10 +401,10 @@
             cbSub.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cbSub.FormattingEnabled = true;
             cbSub.IntegralHeight = false;
-            cbSub.Location = new Point(371, 154);
-            cbSub.Margin = new Padding(4, 2, 4, 2);
+            cbSub.Location = new Point(200, 72);
+            cbSub.Margin = new Padding(2, 1, 2, 1);
             cbSub.Name = "cbSub";
-            cbSub.Size = new Size(635, 53);
+            cbSub.Size = new Size(344, 29);
             cbSub.TabIndex = 18;
             // 
             // cbSer
@@ -425,10 +418,10 @@
             cbSer.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cbSer.FormattingEnabled = true;
             cbSer.IntegralHeight = false;
-            cbSer.Location = new Point(371, 45);
-            cbSer.Margin = new Padding(4, 2, 4, 2);
+            cbSer.Location = new Point(200, 21);
+            cbSer.Margin = new Padding(2, 1, 2, 1);
             cbSer.Name = "cbSer";
-            cbSer.Size = new Size(635, 53);
+            cbSer.Size = new Size(344, 29);
             cbSer.TabIndex = 17;
             // 
             // errorProvider1
@@ -437,13 +430,12 @@
             // 
             // Editar
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(1475, 1079);
+            ClientSize = new Size(794, 506);
             Controls.Add(tabControl1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(6, 6, 6, 6);
             Name = "Editar";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Editar";

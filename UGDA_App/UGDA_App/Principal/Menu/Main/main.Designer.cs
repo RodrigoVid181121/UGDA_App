@@ -29,364 +29,364 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnmin = new System.Windows.Forms.Button();
-            this.btnmax = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.lbtitulo = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pnNav = new System.Windows.Forms.Panel();
-            this.btnbitacora = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnuser = new System.Windows.Forms.Button();
-            this.btndocs = new System.Windows.Forms.Button();
-            this.btnInicio = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pbUser = new System.Windows.Forms.PictureBox();
-            this.lbUser = new System.Windows.Forms.Label();
-            this.pnPrin = new System.Windows.Forms.Panel();
-            this.pnPri = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btn_Edit = new System.Windows.Forms.Button();
-            this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
-            this.pnPri.SuspendLayout();
-            this.SuspendLayout();
+            panel3 = new Panel();
+            btnmin = new Button();
+            btnmax = new Button();
+            btnExit = new Button();
+            lbtitulo = new Label();
+            panel1 = new Panel();
+            pnNav = new Panel();
+            btnbitacora = new Button();
+            btnCerrar = new Button();
+            btnuser = new Button();
+            btndocs = new Button();
+            btnInicio = new Button();
+            panel2 = new Panel();
+            pbUser = new PictureBox();
+            lbUser = new Label();
+            pnPrin = new Panel();
+            btn_Edit = new Button();
+            pnPri = new Panel();
+            label1 = new Label();
+            panel3.SuspendLayout();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbUser).BeginInit();
+            pnPri.SuspendLayout();
+            SuspendLayout();
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.panel3.Controls.Add(this.btnmin);
-            this.panel3.Controls.Add(this.btnmax);
-            this.panel3.Controls.Add(this.btnExit);
-            this.panel3.Controls.Add(this.lbtitulo);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(407, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1469, 94);
-            this.panel3.TabIndex = 3;
+            panel3.BackColor = Color.FromArgb(0, 0, 64);
+            panel3.Controls.Add(btnmin);
+            panel3.Controls.Add(btnmax);
+            panel3.Controls.Add(btnExit);
+            panel3.Controls.Add(lbtitulo);
+            panel3.Dock = DockStyle.Top;
+            panel3.Location = new Point(219, 0);
+            panel3.Margin = new Padding(2, 1, 2, 1);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(791, 44);
+            panel3.TabIndex = 3;
             // 
             // btnmin
             // 
-            this.btnmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnmin.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnmin.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnmin.FlatAppearance.BorderSize = 0;
-            this.btnmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnmin.Font = new System.Drawing.Font("Microsoft JhengHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnmin.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnmin.Location = new System.Drawing.Point(1286, 0);
-            this.btnmin.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnmin.Name = "btnmin";
-            this.btnmin.Size = new System.Drawing.Size(61, 94);
-            this.btnmin.TabIndex = 11;
-            this.btnmin.Text = "-";
-            this.btnmin.UseVisualStyleBackColor = false;
-            this.btnmin.Click += new System.EventHandler(this.btnmin_Click);
+            btnmin.BackColor = Color.FromArgb(0, 0, 64);
+            btnmin.Dock = DockStyle.Right;
+            btnmin.FlatAppearance.BorderColor = Color.White;
+            btnmin.FlatAppearance.BorderSize = 0;
+            btnmin.FlatStyle = FlatStyle.Flat;
+            btnmin.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnmin.ForeColor = Color.WhiteSmoke;
+            btnmin.Location = new Point(692, 0);
+            btnmin.Margin = new Padding(2, 1, 2, 1);
+            btnmin.Name = "btnmin";
+            btnmin.Size = new Size(33, 44);
+            btnmin.TabIndex = 11;
+            btnmin.Text = "-";
+            btnmin.UseVisualStyleBackColor = false;
+            btnmin.Click += btnmin_Click;
             // 
             // btnmax
             // 
-            this.btnmax.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnmax.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnmax.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnmax.FlatAppearance.BorderSize = 0;
-            this.btnmax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnmax.Font = new System.Drawing.Font("Microsoft JhengHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnmax.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnmax.Location = new System.Drawing.Point(1347, 0);
-            this.btnmax.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnmax.Name = "btnmax";
-            this.btnmax.Size = new System.Drawing.Size(61, 94);
-            this.btnmax.TabIndex = 10;
-            this.btnmax.Text = "=";
-            this.btnmax.UseVisualStyleBackColor = false;
-            this.btnmax.Click += new System.EventHandler(this.btnmax_Click);
+            btnmax.BackColor = Color.FromArgb(0, 0, 64);
+            btnmax.Dock = DockStyle.Right;
+            btnmax.FlatAppearance.BorderColor = Color.White;
+            btnmax.FlatAppearance.BorderSize = 0;
+            btnmax.FlatStyle = FlatStyle.Flat;
+            btnmax.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnmax.ForeColor = Color.WhiteSmoke;
+            btnmax.Location = new Point(725, 0);
+            btnmax.Margin = new Padding(2, 1, 2, 1);
+            btnmax.Name = "btnmax";
+            btnmax.Size = new Size(33, 44);
+            btnmax.TabIndex = 10;
+            btnmax.Text = "=";
+            btnmax.UseVisualStyleBackColor = false;
+            btnmax.Click += btnmax_Click;
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnExit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft JhengHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnExit.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnExit.Location = new System.Drawing.Point(1408, 0);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(61, 94);
-            this.btnExit.TabIndex = 9;
-            this.btnExit.Text = "X";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            btnExit.BackColor = Color.FromArgb(0, 0, 64);
+            btnExit.Dock = DockStyle.Right;
+            btnExit.FlatAppearance.BorderColor = Color.White;
+            btnExit.FlatAppearance.BorderSize = 0;
+            btnExit.FlatStyle = FlatStyle.Flat;
+            btnExit.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnExit.ForeColor = Color.WhiteSmoke;
+            btnExit.Location = new Point(758, 0);
+            btnExit.Margin = new Padding(2, 1, 2, 1);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(33, 44);
+            btnExit.TabIndex = 9;
+            btnExit.Text = "X";
+            btnExit.UseVisualStyleBackColor = false;
+            btnExit.Click += btnExit_Click;
             // 
             // lbtitulo
             // 
-            this.lbtitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lbtitulo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbtitulo.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbtitulo.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lbtitulo.Location = new System.Drawing.Point(0, 0);
-            this.lbtitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbtitulo.Name = "lbtitulo";
-            this.lbtitulo.Size = new System.Drawing.Size(1469, 94);
-            this.lbtitulo.TabIndex = 5;
-            this.lbtitulo.Text = "Inicio";
-            this.lbtitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lbtitulo.BackColor = Color.FromArgb(0, 0, 64);
+            lbtitulo.Dock = DockStyle.Fill;
+            lbtitulo.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lbtitulo.ForeColor = Color.WhiteSmoke;
+            lbtitulo.Location = new Point(0, 0);
+            lbtitulo.Margin = new Padding(2, 0, 2, 0);
+            lbtitulo.Name = "lbtitulo";
+            lbtitulo.Size = new Size(791, 44);
+            lbtitulo.TabIndex = 5;
+            lbtitulo.Text = "Inicio";
+            lbtitulo.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
-            this.panel1.AutoSize = true;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.pnNav);
-            this.panel1.Controls.Add(this.btnbitacora);
-            this.panel1.Controls.Add(this.btnCerrar);
-            this.panel1.Controls.Add(this.btnuser);
-            this.panel1.Controls.Add(this.btndocs);
-            this.panel1.Controls.Add(this.btnInicio);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.btn_Edit);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(407, 1173);
-            this.panel1.TabIndex = 2;
-            this.panel1.MouseEnter += new System.EventHandler(this.panel1_MouseEnter);
+            panel1.AutoSize = true;
+            panel1.BackColor = Color.FromArgb(0, 0, 64);
+            panel1.Controls.Add(pnNav);
+            panel1.Controls.Add(btnbitacora);
+            panel1.Controls.Add(btnCerrar);
+            panel1.Controls.Add(btnuser);
+            panel1.Controls.Add(btndocs);
+            panel1.Controls.Add(btnInicio);
+            panel1.Controls.Add(panel2);
+            panel1.Controls.Add(btn_Edit);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(2, 1, 2, 1);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(219, 550);
+            panel1.TabIndex = 2;
+            panel1.MouseEnter += panel1_MouseEnter;
             // 
             // pnNav
             // 
-            this.pnNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
-            this.pnNav.Location = new System.Drawing.Point(-2, 269);
-            this.pnNav.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.pnNav.Name = "pnNav";
-            this.pnNav.Size = new System.Drawing.Size(9, 676);
-            this.pnNav.TabIndex = 4;
+            pnNav.BackColor = Color.FromArgb(33, 150, 243);
+            pnNav.Location = new Point(-1, 126);
+            pnNav.Margin = new Padding(2, 1, 2, 1);
+            pnNav.Name = "pnNav";
+            pnNav.Size = new Size(5, 317);
+            pnNav.TabIndex = 4;
             // 
             // btnbitacora
             // 
-            this.btnbitacora.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnbitacora.FlatAppearance.BorderSize = 0;
-            this.btnbitacora.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnbitacora.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnbitacora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnbitacora.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnbitacora.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnbitacora.Image = ((System.Drawing.Image)(resources.GetObject("btnbitacora.Image")));
-            this.btnbitacora.Location = new System.Drawing.Point(0, 670);
-            this.btnbitacora.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnbitacora.Name = "btnbitacora";
-            this.btnbitacora.Size = new System.Drawing.Size(407, 137);
-            this.btnbitacora.TabIndex = 6;
-            this.btnbitacora.Text = "Bitacora       ";
-            this.btnbitacora.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnbitacora.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnbitacora.UseVisualStyleBackColor = true;
-            this.btnbitacora.Click += new System.EventHandler(this.btnbitacora_Click);
-            this.btnbitacora.MouseEnter += new System.EventHandler(this.btnbitacora_MouseEnter);
+            btnbitacora.Dock = DockStyle.Top;
+            btnbitacora.FlatAppearance.BorderSize = 0;
+            btnbitacora.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnbitacora.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnbitacora.FlatStyle = FlatStyle.Flat;
+            btnbitacora.Font = new Font("Segoe UI", 13.875F, FontStyle.Regular, GraphicsUnit.Point);
+            btnbitacora.ForeColor = Color.WhiteSmoke;
+            btnbitacora.Image = (Image)resources.GetObject("btnbitacora.Image");
+            btnbitacora.Location = new Point(0, 314);
+            btnbitacora.Margin = new Padding(2, 1, 2, 1);
+            btnbitacora.Name = "btnbitacora";
+            btnbitacora.Size = new Size(219, 64);
+            btnbitacora.TabIndex = 6;
+            btnbitacora.Text = "Bitacora       ";
+            btnbitacora.TextAlign = ContentAlignment.MiddleRight;
+            btnbitacora.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnbitacora.UseVisualStyleBackColor = true;
+            btnbitacora.Click += btnbitacora_Click;
+            btnbitacora.MouseEnter += btnbitacora_MouseEnter;
             // 
             // btnCerrar
             // 
-            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(40)))));
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCerrar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(0, 1036);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(401, 137);
-            this.btnCerrar.TabIndex = 5;
-            this.btnCerrar.Text = "  Cerrar sesion";
-            this.btnCerrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            this.btnCerrar.MouseEnter += new System.EventHandler(this.btnCerrar_MouseEnter);
+            btnCerrar.BackColor = Color.FromArgb(0, 0, 40);
+            btnCerrar.FlatAppearance.BorderSize = 0;
+            btnCerrar.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnCerrar.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnCerrar.FlatStyle = FlatStyle.Flat;
+            btnCerrar.Font = new Font("Segoe UI", 13.875F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCerrar.ForeColor = Color.WhiteSmoke;
+            btnCerrar.Image = (Image)resources.GetObject("btnCerrar.Image");
+            btnCerrar.Location = new Point(0, 486);
+            btnCerrar.Margin = new Padding(2, 1, 2, 1);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(216, 64);
+            btnCerrar.TabIndex = 5;
+            btnCerrar.Text = "  Cerrar sesion";
+            btnCerrar.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnCerrar.UseVisualStyleBackColor = true;
+            btnCerrar.Click += btnCerrar_Click;
+            btnCerrar.MouseEnter += btnCerrar_MouseEnter;
             // 
             // btnuser
             // 
-            this.btnuser.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnuser.FlatAppearance.BorderSize = 0;
-            this.btnuser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnuser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnuser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnuser.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnuser.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnuser.Image = ((System.Drawing.Image)(resources.GetObject("btnuser.Image")));
-            this.btnuser.Location = new System.Drawing.Point(0, 533);
-            this.btnuser.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnuser.Name = "btnuser";
-            this.btnuser.Size = new System.Drawing.Size(407, 137);
-            this.btnuser.TabIndex = 4;
-            this.btnuser.Text = "Usuarios       ";
-            this.btnuser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnuser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnuser.UseVisualStyleBackColor = true;
-            this.btnuser.Click += new System.EventHandler(this.btnuser_Click);
-            this.btnuser.MouseEnter += new System.EventHandler(this.btnuser_MouseEnter);
+            btnuser.Dock = DockStyle.Top;
+            btnuser.FlatAppearance.BorderSize = 0;
+            btnuser.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnuser.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnuser.FlatStyle = FlatStyle.Flat;
+            btnuser.Font = new Font("Segoe UI", 13.875F, FontStyle.Regular, GraphicsUnit.Point);
+            btnuser.ForeColor = Color.WhiteSmoke;
+            btnuser.Image = (Image)resources.GetObject("btnuser.Image");
+            btnuser.Location = new Point(0, 250);
+            btnuser.Margin = new Padding(2, 1, 2, 1);
+            btnuser.Name = "btnuser";
+            btnuser.Size = new Size(219, 64);
+            btnuser.TabIndex = 4;
+            btnuser.Text = "Usuarios       ";
+            btnuser.TextAlign = ContentAlignment.MiddleRight;
+            btnuser.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnuser.UseVisualStyleBackColor = true;
+            btnuser.Click += btnuser_Click;
+            btnuser.MouseEnter += btnuser_MouseEnter;
             // 
             // btndocs
             // 
-            this.btndocs.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btndocs.FlatAppearance.BorderSize = 0;
-            this.btndocs.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btndocs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btndocs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndocs.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btndocs.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btndocs.Image = ((System.Drawing.Image)(resources.GetObject("btndocs.Image")));
-            this.btndocs.Location = new System.Drawing.Point(0, 401);
-            this.btndocs.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btndocs.Name = "btndocs";
-            this.btndocs.Size = new System.Drawing.Size(407, 132);
-            this.btndocs.TabIndex = 2;
-            this.btndocs.Text = "Documentos";
-            this.btndocs.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btndocs.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btndocs.UseVisualStyleBackColor = true;
-            this.btndocs.Click += new System.EventHandler(this.btnbuscar_Click);
-            this.btndocs.MouseEnter += new System.EventHandler(this.btndocs_MouseEnter);
+            btndocs.Dock = DockStyle.Top;
+            btndocs.FlatAppearance.BorderSize = 0;
+            btndocs.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btndocs.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btndocs.FlatStyle = FlatStyle.Flat;
+            btndocs.Font = new Font("Segoe UI", 13.875F, FontStyle.Regular, GraphicsUnit.Point);
+            btndocs.ForeColor = Color.WhiteSmoke;
+            btndocs.Image = (Image)resources.GetObject("btndocs.Image");
+            btndocs.Location = new Point(0, 188);
+            btndocs.Margin = new Padding(2, 1, 2, 1);
+            btndocs.Name = "btndocs";
+            btndocs.Size = new Size(219, 62);
+            btndocs.TabIndex = 2;
+            btndocs.Text = "Documentos";
+            btndocs.TextAlign = ContentAlignment.MiddleRight;
+            btndocs.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btndocs.UseVisualStyleBackColor = true;
+            btndocs.Click += btnbuscar_Click;
+            btndocs.MouseEnter += btndocs_MouseEnter;
             // 
             // btnInicio
             // 
-            this.btnInicio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInicio.FlatAppearance.BorderSize = 0;
-            this.btnInicio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnInicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInicio.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnInicio.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnInicio.Image = ((System.Drawing.Image)(resources.GetObject("btnInicio.Image")));
-            this.btnInicio.Location = new System.Drawing.Point(0, 269);
-            this.btnInicio.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(407, 132);
-            this.btnInicio.TabIndex = 1;
-            this.btnInicio.Text = " Inicio            ";
-            this.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnInicio.UseVisualStyleBackColor = true;
-            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
-            this.btnInicio.MouseEnter += new System.EventHandler(this.btnInicio_MouseEnter);
+            btnInicio.Dock = DockStyle.Top;
+            btnInicio.FlatAppearance.BorderSize = 0;
+            btnInicio.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnInicio.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnInicio.FlatStyle = FlatStyle.Flat;
+            btnInicio.Font = new Font("Segoe UI", 13.875F, FontStyle.Regular, GraphicsUnit.Point);
+            btnInicio.ForeColor = Color.WhiteSmoke;
+            btnInicio.Image = (Image)resources.GetObject("btnInicio.Image");
+            btnInicio.Location = new Point(0, 126);
+            btnInicio.Margin = new Padding(2, 1, 2, 1);
+            btnInicio.Name = "btnInicio";
+            btnInicio.Size = new Size(219, 62);
+            btnInicio.TabIndex = 1;
+            btnInicio.Text = " Inicio            ";
+            btnInicio.TextAlign = ContentAlignment.MiddleRight;
+            btnInicio.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnInicio.UseVisualStyleBackColor = true;
+            btnInicio.Click += btnInicio_Click;
+            btnInicio.MouseEnter += btnInicio_MouseEnter;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(40)))));
-            this.panel2.Controls.Add(this.pbUser);
-            this.panel2.Controls.Add(this.lbUser);
-            this.panel2.Controls.Add(this.pnPrin);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(407, 269);
-            this.panel2.TabIndex = 1;
-            this.panel2.MouseEnter += new System.EventHandler(this.panel2_MouseEnter);
+            panel2.BackColor = Color.FromArgb(0, 0, 40);
+            panel2.Controls.Add(pbUser);
+            panel2.Controls.Add(lbUser);
+            panel2.Controls.Add(pnPrin);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Margin = new Padding(2, 1, 2, 1);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(219, 126);
+            panel2.TabIndex = 1;
+            panel2.MouseEnter += panel2_MouseEnter;
             // 
             // pbUser
             // 
-            this.pbUser.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pbUser.Image = ((System.Drawing.Image)(resources.GetObject("pbUser.Image")));
-            this.pbUser.Location = new System.Drawing.Point(0, 0);
-            this.pbUser.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.pbUser.Name = "pbUser";
-            this.pbUser.Size = new System.Drawing.Size(407, 164);
-            this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbUser.TabIndex = 1;
-            this.pbUser.TabStop = false;
+            pbUser.Dock = DockStyle.Top;
+            pbUser.Image = (Image)resources.GetObject("pbUser.Image");
+            pbUser.Location = new Point(0, 0);
+            pbUser.Margin = new Padding(2, 1, 2, 1);
+            pbUser.Name = "pbUser";
+            pbUser.Size = new Size(219, 77);
+            pbUser.SizeMode = PictureBoxSizeMode.Zoom;
+            pbUser.TabIndex = 1;
+            pbUser.TabStop = false;
             // 
             // lbUser
             // 
-            this.lbUser.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lbUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbUser.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lbUser.Location = new System.Drawing.Point(0, 190);
-            this.lbUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbUser.Name = "lbUser";
-            this.lbUser.Size = new System.Drawing.Size(407, 79);
-            this.lbUser.TabIndex = 0;
-            this.lbUser.Text = "Username";
-            this.lbUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lbUser.Dock = DockStyle.Bottom;
+            lbUser.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbUser.ForeColor = Color.WhiteSmoke;
+            lbUser.Location = new Point(0, 89);
+            lbUser.Margin = new Padding(2, 0, 2, 0);
+            lbUser.Name = "lbUser";
+            lbUser.Size = new Size(219, 37);
+            lbUser.TabIndex = 0;
+            lbUser.Text = "Username";
+            lbUser.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pnPrin
             // 
-            this.pnPrin.Location = new System.Drawing.Point(401, 94);
-            this.pnPrin.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.pnPrin.Name = "pnPrin";
-            this.pnPrin.Size = new System.Drawing.Size(1473, 981);
-            this.pnPrin.TabIndex = 4;
-            // 
-            // pnPri
-            // 
-            this.pnPri.AutoSize = true;
-            this.pnPri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(27)))), ((int)(((byte)(89)))));
-            this.pnPri.Controls.Add(this.label1);
-            this.pnPri.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnPri.Location = new System.Drawing.Point(407, 94);
-            this.pnPri.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.pnPri.Name = "pnPri";
-            this.pnPri.Size = new System.Drawing.Size(1469, 1079);
-            this.pnPri.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(27)))), ((int)(((byte)(89)))));
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(386, 134);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(732, 100);
-            this.label1.TabIndex = 10;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            pnPrin.Location = new Point(216, 44);
+            pnPrin.Margin = new Padding(2, 1, 2, 1);
+            pnPrin.Name = "pnPrin";
+            pnPrin.Size = new Size(793, 460);
+            pnPrin.TabIndex = 4;
             // 
             // btn_Edit
             // 
-            this.btn_Edit.FlatAppearance.BorderSize = 0;
-            this.btn_Edit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_Edit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Edit.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_Edit.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Edit.Image = ((System.Drawing.Image)(resources.GetObject("btn_Edit.Image")));
-            this.btn_Edit.Location = new System.Drawing.Point(2, 791);
-            this.btn_Edit.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btn_Edit.Name = "btn_Edit";
-            this.btn_Edit.Size = new System.Drawing.Size(401, 137);
-            this.btn_Edit.TabIndex = 7;
-            this.btn_Edit.Text = "Editar";
-            this.btn_Edit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Edit.UseVisualStyleBackColor = true;
-            this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click_1);
+            btn_Edit.FlatAppearance.BorderSize = 0;
+            btn_Edit.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btn_Edit.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btn_Edit.FlatStyle = FlatStyle.Flat;
+            btn_Edit.Font = new Font("Segoe UI", 13.875F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_Edit.ForeColor = Color.WhiteSmoke;
+            btn_Edit.Image = (Image)resources.GetObject("btn_Edit.Image");
+            btn_Edit.Location = new Point(1, 371);
+            btn_Edit.Margin = new Padding(2, 1, 2, 1);
+            btn_Edit.Name = "btn_Edit";
+            btn_Edit.Size = new Size(216, 64);
+            btn_Edit.TabIndex = 7;
+            btn_Edit.Text = "Editar";
+            btn_Edit.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_Edit.UseVisualStyleBackColor = true;
+            btn_Edit.Click += btn_Edit_Click_1;
+            btn_Edit.MouseEnter += btn_Edit_MouseEnter_1;
+            // 
+            // pnPri
+            // 
+            pnPri.AutoSize = true;
+            pnPri.BackColor = Color.FromArgb(0, 27, 89);
+            pnPri.Controls.Add(label1);
+            pnPri.Dock = DockStyle.Fill;
+            pnPri.Location = new Point(219, 44);
+            pnPri.Margin = new Padding(2, 1, 2, 1);
+            pnPri.Name = "pnPri";
+            pnPri.Size = new Size(791, 506);
+            pnPri.TabIndex = 4;
+            // 
+            // label1
+            // 
+            label1.BackColor = Color.FromArgb(0, 27, 89);
+            label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.WhiteSmoke;
+            label1.Location = new Point(208, 63);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(394, 47);
+            label1.TabIndex = 10;
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1876, 1173);
-            this.Controls.Add(this.pnPri);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.Name = "main";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form3";
-            this.Load += new System.EventHandler(this.Form3_Load);
-            this.panel3.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
-            this.pnPri.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1010, 550);
+            Controls.Add(pnPri);
+            Controls.Add(panel3);
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(2, 1, 2, 1);
+            Name = "main";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Form3";
+            Load += Form3_Load;
+            panel3.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pbUser).EndInit();
+            pnPri.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

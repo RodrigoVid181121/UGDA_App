@@ -17,7 +17,7 @@ namespace UGDA_App
     public partial class main : Form
     {
 
-        
+
         public main()
         {
             InitializeComponent();
@@ -157,28 +157,6 @@ namespace UGDA_App
             this.Close();
         }
 
-        private void btn_Edit_Click(object sender, EventArgs e)
-        {
-            pnNav.Height = btn_Edit.Height;
-            pnNav.Top = btn_Edit.Top;
-            pnNav.Left = btn_Edit.Left;
-            btn_Edit.ForeColor = Color.WhiteSmoke;
-            lbtitulo.Text = "Editar";
-            if (pnPri.Controls.Count > 0) { pnPri.Controls.RemoveAt(0); }
-            Editar frm = new Editar();
-            frm.TopLevel = false;
-            pnPri.Controls.Add(frm);
-            frm.Show();
-        }
-
-        private void btn_Edit_MouseEnter(object sender, EventArgs e)
-        {
-            pnNav.BackColor = Color.FromArgb(33, 150, 243);
-            pnNav.Height = btn_Edit.Height;
-            pnNav.Top = btn_Edit.Top;
-            pnNav.Left = btn_Edit.Left;
-        }
-
         private void btnmax_Click(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Normal)
@@ -198,7 +176,24 @@ namespace UGDA_App
 
         private void btn_Edit_Click_1(object sender, EventArgs e)
         {
+            pnNav.Height = btn_Edit.Height;
+            pnNav.Top = btn_Edit.Top;
+            pnNav.Left = btn_Edit.Left;
+            btn_Edit.ForeColor = Color.WhiteSmoke;
+            lbtitulo.Text = "Editar";
+            if (pnPri.Controls.Count > 0) { pnPri.Controls.RemoveAt(0); }
+            Editar frm = new Editar();
+            frm.TopLevel = false;
+            pnPri.Controls.Add(frm);
+            frm.Show();
+        }
 
+        private void btn_Edit_MouseEnter_1(object sender, EventArgs e)
+        {
+            pnNav.BackColor = Color.FromArgb(33, 150, 243);
+            pnNav.Height = btn_Edit.Height;
+            pnNav.Top = btn_Edit.Top;
+            pnNav.Left = btn_Edit.Left;
         }
     }
 }
