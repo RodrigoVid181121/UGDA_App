@@ -1,0 +1,204 @@
+﻿id_subserie;id_serie;nombre_subserie;codigo_subserie
+1;15;Acuerdos;ACUE
+2;9;Administrativos;ADMI
+3;11;Asambleas ciudadanas;ASCI
+4;7;Asociaciones;ASOC
+5;8;Bienes de consumo;BICO
+6;11;Cabildo abierto;CAAB
+7;9;Civiles;CIVI
+8;11;Comites de desarrollo local;CODL
+9;11;Consulta popular;COPO
+10;11;Consulta vecinal y sectorial;COVS
+11;7;Cooperacion internacional;COIN
+12;7;Cooperacion Nacional;CONA
+13;6;Corte de Cuentas;COCU
+14;6;Externa;EXTE
+15;7;Hermanamientos;HERM
+16;8;Inmuebles (Consejo Municipal);INMU
+17;12;Inmuebles rusticos;INRÚ
+18;12;Inmuebles urbanos;INUR
+19;6;Interna;INTE
+20;9;Laborales;LABO
+21;8;Muebles (Consejo Municipal);MUEB
+22;15;Ordenanzas;ORDE
+23;9;Penales;PENA
+24;15;Reglamentos;REGL
+25;20;Concursos Publicos;CP
+26;20;Contratacion directa;CTD
+27;20;Licitaciones publicas;LCTP
+28;20;Libre gestion;LBG
+29;22;Destruccion;DTR
+30;22;Donacion;DNC
+31;22;Subasta;SBS
+32;23;Agua potable (Administración);AGPB
+33;23;Aire acondicionado;ACND
+34;23;Energia electrica;ENEL
+35;23;Jardineria;JRD
+36;23;Limpieza;LMPZ
+37;23;Seguridad;SRG
+38;23;Telefonia e internet;TLIE
+39;23;Transporte;TRSP
+40;24;Agua purificada;AGPD
+41;24;Combustible;CMB
+42;24;Salidas de almacen;SDA
+43;25;Inmuebles (Administracion);INMB
+44;25;Muebles (Administracion);MBL
+45;26;Bienes;BNS
+46;26;Suministros;SMTR
+47;32;Equipos de telecomunicacion;ETLC
+48;32;Hardware;HRDW
+49;35;Actos y eventos oficiales;AEOF
+50;35;Seguimiento de medios;SDM
+51;46;Abiertos;ABRT
+52;46;Ascensos;ASCS
+53;48;etica gubernamental;EGBT
+54;48;Genero;GNR
+55;48;Seguridad y Salud Ocupacional;SSO
+56;49;Contrato;CRT
+57;49;Carrera Administrativa Municipal;CADM
+58;53;Administradora de Fondos de Pensiones (AFP);AFP
+59;53;Descuentos;DSC
+60;53;Impuesto sobre la renta;IMPR
+61;53;Instituto Nacional de Pensiones de los Empleados Publicos (INPEP);INPEP
+62;53;Instituto de Prevision Social de la Fuerza Armada (IPSFA);IPSFA
+63;53;Instituto Salvadoreño del Seguro Social (ISSS);ISSS
+64;55;Aguinaldo;AGNL
+65;55;Bonificaciones;BNFC
+66;55;Indemnizaciones por retiro voluntario;INRV
+67;55;Prestacion economica por gastos funerarios;PREG
+68;55;Seguros privados;SPV
+69;55;Fianzas;FNZ
+70;59;Estado de situacion financiera;ESF
+71;59;Estado de rendimiento economico;ERE
+72;59;Estado de ejecucion presupuestaria;EJP
+73;59;Estado de flujo de efectivo;EFE
+74;63;Libro diario;LD
+75;63;Libro mayor;LM
+76;68;Impuestos directos;IMD
+77;68;Impuestos indirectos;IMI
+78;69;Contribuciones;CO
+79;69;Derechos y licencias;DL
+80;69;Tasas;TA
+81;73;Presupuesto de ingresos;PI
+82;73;Presupuesto de egresos;PE
+83;76;Control de cheques;CCH
+84;76;Chequeras;CH
+85;76;Extractos bancarios;EB
+86;76;Conciliaciones bancarias;CB
+87;78;Libro diario de ingresos;LDIS
+88;78;Libro de banco;LB
+89;78;Libro de especies municipales;LEM
+90;79;Fondos FODES;FFO
+91;79;Obligaciones por pagar;OPP
+92;79;Programacion de ejecucion presupuestaria (PEP);PEP
+93;79;Remuneraciones;RE
+94;83;Animales domesticos;AD
+95;83;Personas;PERS
+96;86;Expedientes de autorizacion de establecimientos comerciales, industriales, financieros y de servicios;EAEC
+97;86;Expedientes de autorizacion de loterias y rifas;EALR
+98;86;Expedientes de instalacion de fabricas de licor;EAFL
+99;86;Expedientes de regulacion de restaurantes, bares y clubes nocturnos;ERRB
+100;88;Difusion cultural;DC
+101;88;Promocion cultural;PC
+102;99;Agua potable (Servicios Municipales);APSM
+103;99;Alcantarillado;ALCA
+104;99;Alumbrado publico;ALPU
+105;99;Cementerios;CEM
+106;99;Electrificacion;ELEC
+107;99;Nomenclatura y señalizacion;NYS
+108;99;Parques y zonas verdes;PYZV
+109;99;Red vial;RV
+110;99;Vivienda;VV
+111;100;Ampliacion;AMPL
+112;100;Demolicion;DEMO
+113;100;Instalacion;INST
+114;100;Remodelacion;REMO
+115;100;Reparacion;REPA
+116;100;Rotura de acera o pavimento;RDAP
+117;100;Lotificaciones;LOT
+118;100;Parcelaciones;PARC
+119;100;Uso del hogar;UDH
+120;101;Autorizaciones;AUTO
+121;101;Licencias de instalacion;LDI
+122;101;Permisos;PERM
+123;112;Ferias de empleo;FDE
+124;112;Guarderias;GUAR
+125;112;Mesas sectoriales o distritales;MSOD
+126;112;Programas de equidad de genero;PDEG
+127;112;Programas de fomento de valores;PDFV
+128;113;Empresas (Base de Datos);EMPR
+129;113;Inmuebles BD (Servicios Municipales);IMSM
+130;116;Comerciales;COM
+131;116;Empresariales;EMPS
+132;116;Industriales;INDS
+133;117;Cartograficos;CART
+134;117;Catastrales;CATS
+135;117;Tematicos;TEMA
+136;123;Adopciones;ADOP
+137;123;Defunciones;DEF
+138;123;Divorcios;DV
+139;123;Matrimonios;MT
+140;123;Nacimientos;NAC
+141;123;Uniones no matrimoniales;UNM
+142;128;Inscripciones;INSC
+143;129;Casados;CASD
+144;129;Fallecidos;FALL
+145;129;Hijos ilegitimos;HI
+146;129;Hijos legitimos;HL
+147;130;Partidas de nacimiento;PDN
+148;130;Partidas de matrimonio;PDM
+149;131;Comunidad diferida;CD
+150;131;Participacion en las ganancias;PELG
+151;131;Separacion de bienes;SDB
+152;132;Reposicion por correccion del nombre;PPCN
+153;132;Reposicion por deterioro;RPD
+154;132;Reposicion por extravio;RPE
+155;132;Traspaso por donacion;TPD
+156;132;Traspaso por herencia;TPH
+157;132;Traspaso por venta;TPV
+158;135;Pajas de agua;PDA
+159;135;Titulos de pajas de agua;TPDA
+160;136;Bitacoras de aseo;BDA
+161;136;Contrato de recoleccion de desechos solidos;CRDS
+162;136;Rellenos sanitarios;RS
+163;137;Actas de inspecciones en cementerios;AIC
+164;142;Inhumaciones;INH
+165;142;Exhumaciones;EXH
+166;142;Cadaveres;CAD
+167;142;Osarios;OSAR
+168;143;Refrendables;REFR
+169;143;Perpetuos;PERP
+170;151;Inventario de armamento y municion;IAM
+171;151;Nomina de agentes y personal de vigilancia;NAPV
+172;151;Libro de patrullas;LDP
+173;152;Sancionatorios;SANC
+174;152;Solucion alternativa del conflicto;SADC
+175;154;Cartas de venta de ganado;CVG
+176;154;Cartas poder para venta de ganado;CPVG
+177;156;Ganado mayor;GMA
+178;156;Ganado menor;GME
+179;163;Numerica;NUM
+180;163;Especial;ESP
+181;167;Rutas locales;RL
+182;167;Terminales de pasajeros;TDP
+183;167;Transporte de carga;TDC
+184;168;Tiquetes de entrada;TDE
+185;168;Tiquetes de estacionamiento;TDES
+186;168;Tiquetes de salida;TDS
+187;21;Concursos Publicos Contratacion;CPC
+188;21;Contratacion directa Contratacion;CTDC
+189;21;Licitaciones publicas Contratacion;LCTC
+190;114;Empresas Expedientes de Cobro;EEXC
+191;114;Inmuebles Expedientes de Cobro (Servicios Municipales);IMSS
+192;125;Adopciones (Indices);ADOI
+193;125;Defunciones (Indices);DEFI
+194;125;Divorcios (Indices);DVI
+195;125;Matrimonios (Indices);MTI
+196;125;Nacimientos (Indices);NACI
+197;125;Uniones no matrimoniales (Indices);UNMI
+198;127;Adopciones (Libros de registro);ADOR
+199;127;Defunciones (Libros de registro);DEFR
+200;127;Divorcios (Libros de registro);DVLR
+201;127;Matrimonios (Libros de registro);MTLR
+202;127;Nacimientos (Libros de registro);NACL
+203;127;Uniones no matrimoniales (Libros de registro);UNMR

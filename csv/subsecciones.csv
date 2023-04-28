@@ -1,0 +1,23 @@
+﻿id_subseccion;id_seccion;nombre_subseccion
+1;1;Ninguno
+2;2;Administración de bienes, servicios y suministros
+3;2;Información y comunicación municipal
+4;2;Recursos humanos
+5;3;Contabilidad
+6;3;Presupuesto
+7;3;Tesorería
+8;4;Clínicas municipales
+9;4;Comercialización
+10;4;Cultura y deportes
+11;4;Desarrollo rural y agropecuario
+12;4;Desarrollo urbano
+13;4;Mercados
+14;4;Promoción social
+15;4;Registro catastral tributario
+16;4;Registro Civil
+17;4;Registro del estado familiar
+18;4;Sanidad y medio ambiente
+19;4;Seguridad
+20;4;Transacciones de ganado
+21;4;Transporte local
+22;4;Turismo
