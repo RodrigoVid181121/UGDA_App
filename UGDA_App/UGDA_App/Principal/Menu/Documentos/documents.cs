@@ -1,20 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using Entidades.Documentos;
+using Entidades.Series;
+using Entidades.Subseries;
+using Entidades.UnidadesProductoras;
+using Entidades.Usuarios;
+using LogicaNegocios.Documentos;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-//using ServicioSocial.Forms.Clases;
-using System.Diagnostics.Eventing.Reader;
 
 namespace UGDA_App
 {
     public partial class documents : Form
     {
+        private ClsDocument objDocument = null;
+        private ClsUsuario objUser = null;
+        private ClsSerie objSerie = null;
+        private ClsSubSerie objSubSerie = null;
+        private ClsUnidadProductora objUnidad = null;
+        private readonly ClsDocumentLn objDocumentLn = new ClsDocumentLn();
         DataTable dt = new DataTable();
         //Documentos doc = new Documentos();
         //Validaciones val = new Validaciones();
@@ -22,6 +24,7 @@ namespace UGDA_App
         public documents()
         {
             InitializeComponent();
+            cargarTabla();
         }
 
         private void txtbuscar_TextChanged(object sender, EventArgs e)
@@ -33,15 +36,7 @@ namespace UGDA_App
             pc = dgvbuscar.CurrentRow.Index;
             if (MessageBox.Show("¿Está seguro que desea eliminar el documento?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
             {
-                //if (doc.EliminarDoc(txtcod.Text, Global.carnet_usuario))
-                //{
-                //    MessageBox.Show("Se ha eliminado el documento", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //    cargarTabla();
-                //}
-                //else
-                //{
-                //    MessageBox.Show("Ha ocurrido un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //}
+              
             }
 
         }
@@ -58,16 +53,27 @@ namespace UGDA_App
 
         private void cargarTabla()
         {
-            //dt = doc.MostrarBuscarUsuario();
-            dgvbuscar.DataSource = dt;
-            dgvbuscar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            dgvbuscar.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            objDocument = new ClsDocument();
+            objDocumentLn.Index(ref objDocument);
+
+            if(objDocument.ErrorMessage == null)
+            {
+                //dt = doc.MostrarBuscarUsuario();
+                dgvbuscar.DataSource = objDocument.DtResults;
+                dgvbuscar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+                dgvbuscar.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            }
+            else
+            {
+                MessageBox.Show(objDocument.ErrorMessage, "Mensaje de error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void documents_Load(object sender, EventArgs e)
         {
             txtcod.Visible = false;
-            cargarTabla();
+            
             cmbfiltro.SelectedIndex = 0;
             //doc.llenarcbsubseries(cbSubS);
             //doc.llenarcbunidades(cbUnidad);
@@ -78,20 +84,40 @@ namespace UGDA_App
         }
 
         private void btnguardar_Click(object sender, EventArgs e)
-        {
+        {            
             string codigo = txtcod.Text.Trim();
             if (cbSubS.Text != "" && cbUnidad.Text != "" && txtubicacion.Text.Trim() != "" && txtaño.Text.Trim() != "" && txtdescripcion.Text.Trim() != "")
             {
-                //    if (doc.InsertarDoc(cbSubS.Text.Trim(), cbUnidad.Text.Trim(), txtubicacion.Text.Trim(), txtaño.Text.Trim(), txtdescripcion.Text.Trim(), Global.carnet_usuario))
-                //    {
-                //        MessageBox.Show("Se ha ingresado el documento " + Global.codigo_documento, "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //        limpiar();
-                //        cargarTabla();
-                //    }
-                //    else
-                //    {
-                //        MessageBox.Show("Ha ocurrido un error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //}
+                objDocument = new ClsDocument()
+                {
+                    Descripcion = txtdescripcion.Text,
+                    Año = txtaño.Text,
+                    Ubicación = txtubicacion.Text
+                };
+                objUser = new ClsUsuario()
+                {
+                    Carnet = codigo
+                };
+                objUnidad = new ClsUnidadProductora()
+                {
+                    Nombre_unidad_productora = cbUnidad.Text
+                };
+                objSubSerie = new ClsSubSerie()
+                {
+                    Nombresubserie = cbSubS.Text
+                };
+
+                objDocumentLn.Create(ref objDocument, ref objUnidad, ref objUser, ref objSubSerie);
+
+                if(objDocument.ErrorMessage == null) 
+                {
+                    MessageBox.Show("El código" + objDocument.CodigoDoc + "fue añadido con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cargarTabla();
+                }
+                else
+                {
+                    MessageBox.Show(objDocument.ErrorMessage, "Mensaje de error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
@@ -177,21 +203,21 @@ namespace UGDA_App
         {
             if (cmbfiltro.SelectedIndex == 0)
             {
-                dt.DefaultView.RowFilter = $"ID LIKE '{txtbuscar.Text}%'";
+                objDocument.DtResults.DefaultView.RowFilter = $"ID LIKE '{txtbuscar.Text}%'";
             }
 
             if (cmbfiltro.SelectedIndex == 1)
             {
-                dt.DefaultView.RowFilter = $"Año LIKE '{txtbuscar.Text}%'";
+                objDocument.DtResults.DefaultView.RowFilter = $"Año LIKE '{txtbuscar.Text}%'";
             }
 
             if (cmbfiltro.SelectedIndex == 2)
             {
-                dt.DefaultView.RowFilter = $"Ubicación LIKE '{txtbuscar.Text}%'";
+                objDocument.DtResults.DefaultView.RowFilter = $"Ubicación LIKE '{txtbuscar.Text}%'";
             }
             if (cmbfiltro.SelectedIndex == 3)
             {
-                dt.DefaultView.RowFilter = $"Descripción LIKE '{txtbuscar.Text}%'";
+                objDocument.DtResults.DefaultView.RowFilter = $"Descripción LIKE '{txtbuscar.Text}%'";
             }
         }
 

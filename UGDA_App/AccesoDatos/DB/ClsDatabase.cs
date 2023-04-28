@@ -51,7 +51,7 @@ namespace AccesoDatos.DB
             DtParameters.Columns.Add("DataType");
             DtParameters.Columns.Add("Value");
 
-            DBName = string.Empty;
+            DBName = "db_alcaldia";
         }
 
         #endregion

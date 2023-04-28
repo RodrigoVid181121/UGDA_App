@@ -56,3 +56,12 @@ C:\Users\navas\Desktop\UGDA\UGDA_App\UGDA_App\obj\Debug\net6.0-windows\refint\UG
 C:\Users\navas\Desktop\UGDA\UGDA_App\UGDA_App\obj\Debug\net6.0-windows\UGDA_App.pdb
 C:\Users\navas\Desktop\UGDA\UGDA_App\UGDA_App\obj\Debug\net6.0-windows\UGDA_App.genruntimeconfig.cache
 C:\Users\navas\Desktop\UGDA\UGDA_App\UGDA_App\obj\Debug\net6.0-windows\ref\UGDA_App.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\UGDA_App\bin\Debug\net6.0-windows\Entidades.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\UGDA_App\bin\Debug\net6.0-windows\Entidades.pdb
+C:\Users\navas\Desktop\UGDA\UGDA_App\UGDA_App\bin\Debug\net6.0-windows\AccesoDatos.dll.config
+C:\Users\navas\Desktop\UGDA\UGDA_App\UGDA_App\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\UGDA_App\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\UGDA_App\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\UGDA_App\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\UGDA_App\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\UGDA_App\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
