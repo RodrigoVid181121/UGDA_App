@@ -75,6 +75,12 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
+<<<<<<< Updated upstream
+=======
+            "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj": {
+              "projectPath": "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj"
+            },
+>>>>>>> Stashed changes
             "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj": {
               "projectPath": "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj"
             }

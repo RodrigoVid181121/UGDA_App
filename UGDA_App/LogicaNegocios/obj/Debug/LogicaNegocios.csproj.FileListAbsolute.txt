@@ -7,3 +7,25 @@
 \\Mac\Home\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.csproj.CopyComplete
 \\Mac\Home\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.dll
 \\Mac\Home\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.pdb
+<<<<<<< Updated upstream
+=======
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Debug\LogicaNegocios.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Debug\LogicaNegocios.pdb
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Debug\AccesoDatos.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Debug\Entidades.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Debug\AccesoDatos.pdb
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Debug\AccesoDatos.dll.config
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Debug\Entidades.pdb
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.csproj.AssemblyReference.cache
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.csproj.CoreCompileInputs.cache
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.csproj.CopyComplete
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.pdb
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Debug\System.Data.SqlClient.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Debug\System.Data.SqlClient.xml
+\\Mac\Home\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\Entidades.dll
+\\Mac\Home\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\System.Data.SqlClient.dll
+\\Mac\Home\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\AccesoDatos.dll.config
+\\Mac\Home\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\Entidades.pdb
+\\Mac\Home\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\System.Data.SqlClient.xml
+>>>>>>> Stashed changes

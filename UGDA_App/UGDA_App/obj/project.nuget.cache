@@ -1,8 +1,25 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "QPNrUm5t1NhGMsAh4xPtIGysbOCNlbYuBmPrUcrTVTKka8c/a0s8Iq0P5DPgi08rSTnPxhqRVn2tiWEtYIswyQ==",
   "success": true,
   "projectFilePath": "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\UGDA_App\\UGDA_App.csproj",
   "expectedPackageFiles": [],
+=======
+  "dgSpecHash": "HRqkBHv7TJuO+K+5eECFLYnLSxCSEe2vKSPx98AHV0sE/z+f3Xjavl2ltoQifcYmIQ2eeZrK7ofa1qSbb1cncQ==",
+  "success": true,
+  "projectFilePath": "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\UGDA_App\\UGDA_App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rocio\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Rocio\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\Rocio\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\Rocio\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Rocio\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Rocio\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Rocio\\.nuget\\packages\\system.data.sqlclient\\4.8.5\\system.data.sqlclient.4.8.5.nupkg.sha512",
+    "C:\\Users\\Rocio\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\Rocio\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+  ],
+>>>>>>> Stashed changes
   "logs": []
 }

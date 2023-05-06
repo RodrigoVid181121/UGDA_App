@@ -19,8 +19,28 @@
         "net48": {}
       }
     },
+<<<<<<< Updated upstream
     "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj": {
       "restore": {
+=======
+    "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj": {
+      "restore": {
+        "projectUniqueName": "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj",
+        "projectName": "Entidades",
+        "projectPath": "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj": {
+      "restore": {
+>>>>>>> Stashed changes
         "projectUniqueName": "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj",
         "projectName": "LogicaNegocios",
         "projectPath": "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj",
@@ -29,6 +49,12 @@
             "projectReferences": {
               "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\AccesoDatos\\AccesoDatos.csproj": {
                 "projectPath": "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\AccesoDatos\\AccesoDatos.csproj"
+<<<<<<< Updated upstream
+=======
+              },
+              "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj": {
+                "projectPath": "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj"
+>>>>>>> Stashed changes
               }
             }
           }
@@ -67,6 +93,12 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
+<<<<<<< Updated upstream
+=======
+              "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj": {
+                "projectPath": "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj"
+              },
+>>>>>>> Stashed changes
               "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj": {
                 "projectPath": "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj"
               }
