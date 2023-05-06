@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\UGDA_App\\UGDA_App.csproj": {}
+    "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\UGDA_App\\UGDA_App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\AccesoDatos\\AccesoDatos.csproj": {
+    "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\AccesoDatos\\AccesoDatos.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\AccesoDatos\\AccesoDatos.csproj",
+        "projectUniqueName": "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\AccesoDatos\\AccesoDatos.csproj",
         "projectName": "AccesoDatos",
-        "projectPath": "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\AccesoDatos\\AccesoDatos.csproj",
+        "projectPath": "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\AccesoDatos\\AccesoDatos.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {}
@@ -19,11 +19,11 @@
         "net48": {}
       }
     },
-    "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {}
@@ -34,19 +34,19 @@
         "net48": {}
       }
     },
-    "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj": {
+    "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj",
+        "projectUniqueName": "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj",
         "projectName": "LogicaNegocios",
-        "projectPath": "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj",
+        "projectPath": "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\AccesoDatos\\AccesoDatos.csproj": {
-                "projectPath": "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\AccesoDatos\\AccesoDatos.csproj"
+              "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\AccesoDatos\\AccesoDatos.csproj": {
+                "projectPath": "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\AccesoDatos\\AccesoDatos.csproj"
               },
-              "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\Entidades\\Entidades.csproj"
+              "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -56,21 +56,17 @@
         "net48": {}
       }
     },
-    "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\UGDA_App\\UGDA_App.csproj": {
+    "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\UGDA_App\\UGDA_App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\UGDA_App\\UGDA_App.csproj",
+        "projectUniqueName": "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\UGDA_App\\UGDA_App.csproj",
         "projectName": "UGDA_App",
-        "projectPath": "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\UGDA_App\\UGDA_App.csproj",
-        "packagesPath": "C:\\Users\\navas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\UGDA_App\\obj\\",
+        "projectPath": "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\UGDA_App\\UGDA_App.csproj",
+        "packagesPath": "C:\\Users\\arami\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\UGDA_App\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\navas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\arami\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,18 +74,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\Entidades\\Entidades.csproj"
+              "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj"
               },
-              "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj": {
-                "projectPath": "C:\\Users\\navas\\Desktop\\UGDA\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj"
+              "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj": {
+                "projectPath": "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj"
               }
             }
           }
@@ -128,7 +123,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -13,7 +13,7 @@ namespace UGDA_App
     {
         private ClsDocument objDocument = null;
         private ClsUsuario objUser = null;
-        private ClsSerie objSerie = null;
+        //private ClsSerie objSerie = null;
         private ClsSubSerie objSubSerie = null;
         private ClsUnidadProductora objUnidad = null;
         private readonly ClsDocumentLn objDocumentLn = new ClsDocumentLn();

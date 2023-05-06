@@ -1,34 +1,44 @@
 ﻿//using UGDA_App.Forms.Clases;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using Entidades.Bitacora;
+using Entidades.Series;
+using LogicaNegocios.Bitacora;
+using System.Xml.Serialization;
 
 namespace UGDA_App
 {
     public partial class history : Form
     {
+        private ClsBitacora objBit;
+        private ClsBitacoraLn objBitLn = new ClsBitacoraLn();
+
         public history()
         {
             InitializeComponent();
-        }
+            cargarBitacora();
+            cmbfiltro.SelectedIndex = 1;
+        }  
 
-        //Bitacora bitacora = new Bitacora();
-        DataTable dt = new DataTable();
+        private void cargarBitacora()
+        {
+            objBit = new ClsBitacora();
+            objBitLn.Index(ref objBit);
+
+            if (objBit.ErrorMessage == null)
+            {
+
+                dgbitacora.DataSource = objBit.DtResults;
+                dgbitacora.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+                dgbitacora.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            }
+            else
+            {
+                MessageBox.Show(objBit.ErrorMessage, "Mensaje de error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
         private void history_Load(object sender, EventArgs e)
         {
-            //dt = bitacora.MostrarDatos();
-            dgbitacora.DataSource = dt;
-            dgbitacora.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            dgbitacora.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            cmbfiltro.SelectedIndex = 1;
+
         }
 
         private void txtbuscar_TextChanged(object sender, EventArgs e)
@@ -36,22 +46,37 @@ namespace UGDA_App
             //Filtrar por Evento
             if (cmbfiltro.SelectedIndex == 0)
             {
-                dt.DefaultView.RowFilter = $"Evento LIKE '{txtbuscar.Text}%'";
+                objBit.DtResults.DefaultView.RowFilter = $"Evento LIKE '{txtbuscar.Text}%'";
             }
 
             //Filtrar por Usuario
             if (cmbfiltro.SelectedIndex == 1)
             {
-                dt.DefaultView.RowFilter = $"Usuario LIKE '{txtbuscar.Text}%'";
+                objBit.DtResults.DefaultView.RowFilter = $"Usuario LIKE '{txtbuscar.Text}%'";
             }
 
             //Filtrar por fecha
             if (cmbfiltro.SelectedIndex == 2)
             {
-                dt.DefaultView.RowFilter = $"Fecha LIKE '{txtbuscar.Text}%'";
+                objBit.DtResults.DefaultView.RowFilter = $"Fecha LIKE '{txtbuscar.Text}%'";
             }
         }
 
-
+        private void DeleteBitacora_Click(object sender, EventArgs e)
+        {
+            
+            objBit = new ClsBitacora();
+            objBitLn.Delete(ref objBit);
+            if (objBit.ErrorMessage == null)
+            {
+                MessageBox.Show("Bitácora eliminada con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                cargarBitacora();
+            }
+            else
+            {
+                MessageBox.Show(objBit.ErrorMessage, "Error al cargar la bitácora", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+                
+        }
     }
 }

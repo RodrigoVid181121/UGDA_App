@@ -44,8 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bitacora\ClsBitacoraLn.cs" />
     <Compile Include="Documentos\ClsDocumentLn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Series\ClsSeriesLn.cs" />
+    <Compile Include="Subseries\ClsSubseriesLn.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AccesoDatos\AccesoDatos.csproj">
@@ -60,5 +63,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
