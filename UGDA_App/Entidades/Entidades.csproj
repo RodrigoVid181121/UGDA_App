@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bitacora\ClsBitacora.cs" />
     <Compile Include="Documentos\ClsDocument.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Series\ClsSerie.cs" />
@@ -54,7 +55,6 @@
   <ItemGroup>
     <Folder Include="BitacoraDocumentos\" />
     <Folder Include="Cargos\" />
-    <Folder Include="Secciones\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

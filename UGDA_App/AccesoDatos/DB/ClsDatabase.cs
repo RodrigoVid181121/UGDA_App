@@ -246,14 +246,15 @@ namespace AccesoDatos.DB
 
                 AddParameters(ref objDataBase);
 
-                if(objDataBase.Escalar == true)
-                {
-                    objDataBase.EscalarValue = objDataBase.ObjSqlCommand.ExecuteScalar().ToString().Trim();
-                }
-                else
-                {
-                    objDataBase.ObjSqlCommand.ExecuteNonQuery();
-                }
+                //if (objDataBase.Escalar == true)
+                //{
+                //    objDataBase.EscalarValue = objDataBase.ObjSqlCommand.ExecuteScalar().ToString().Trim();
+                //}
+                //else
+                //{
+                //    objDataBase.ObjSqlCommand.ExecuteNonQuery();
+                //}
+                objDataBase.ObjSqlCommand.ExecuteNonQuery();
             }
             catch (Exception ex)
             {

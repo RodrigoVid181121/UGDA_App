@@ -7,6 +7,7 @@ namespace Entidades.Series
         #region Variables privadas
         private int _idserie, _idseccion;
         private string _nombre_serie;
+        private string _nombre_seccion;
 
         private string _errorMessage, _ScalarValue;
         private DataTable _dtResults;
@@ -20,6 +21,7 @@ namespace Entidades.Series
         public string ErrorMessage { get => _errorMessage; set => _errorMessage = value; }
         public string ScalarValue { get => _ScalarValue; set => _ScalarValue = value; }
         public DataTable DtResults { get => _dtResults; set => _dtResults = value; }
+        public string Nombre_seccion { get => _nombre_seccion; set => _nombre_seccion = value; }
 
         #endregion
     }

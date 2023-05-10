@@ -7,3 +7,12 @@ C:\Users\navas\Desktop\UGDA\UGDA_App\Entidades\obj\Debug\Entidades.pdb
 C:\Users\navas\Desktop\UGDA\UGDA_App\Entidades\bin\Debug\System.Data.SqlClient.dll
 C:\Users\navas\Desktop\UGDA\UGDA_App\Entidades\bin\Debug\System.Data.SqlClient.xml
 C:\Users\navas\Desktop\UGDA\UGDA_App\Entidades\obj\Debug\Entidades.csproj.CopyComplete
+C:\Users\arami\OneDrive\Escritorio\UGDA_App\UGDA_App\Entidades\bin\Debug\Entidades.dll
+C:\Users\arami\OneDrive\Escritorio\UGDA_App\UGDA_App\Entidades\bin\Debug\Entidades.pdb
+C:\Users\arami\OneDrive\Escritorio\UGDA_App\UGDA_App\Entidades\bin\Debug\System.Data.SqlClient.dll
+C:\Users\arami\OneDrive\Escritorio\UGDA_App\UGDA_App\Entidades\bin\Debug\System.Data.SqlClient.xml
+C:\Users\arami\OneDrive\Escritorio\UGDA_App\UGDA_App\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\arami\OneDrive\Escritorio\UGDA_App\UGDA_App\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\arami\OneDrive\Escritorio\UGDA_App\UGDA_App\Entidades\obj\Debug\Entidades.csproj.CopyComplete
+C:\Users\arami\OneDrive\Escritorio\UGDA_App\UGDA_App\Entidades\obj\Debug\Entidades.dll
+C:\Users\arami\OneDrive\Escritorio\UGDA_App\UGDA_App\Entidades\obj\Debug\Entidades.pdb

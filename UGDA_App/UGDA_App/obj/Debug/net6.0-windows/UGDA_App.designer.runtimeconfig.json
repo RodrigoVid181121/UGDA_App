@@ -12,9 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\navas\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\navas\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      "C:\\Users\\arami\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\arami\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
