@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\AccesoDatos",
+    "\\AccesoDatos\\DB",
+    "\\Entidades",
+    "\\Entidades\\Bitacora",
+    "\\LogicaNegocios",
+    "\\LogicaNegocios\\Series",
+    "\\LogicaNegocios\\Usuarios"
+  ],
+  "SelectedNode": "\\LogicaNegocios\\Usuarios\\ClsUsuariosLn.cs",
+  "PreviewInSolutionExplorer": false
+}
