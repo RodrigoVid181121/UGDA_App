@@ -35,3 +35,8 @@ C:\Users\arami\OneDrive\Escritorio\UGDA_App\UGDA_App\LogicaNegocios\obj\Debug\Lo
 C:\Users\arami\OneDrive\Escritorio\UGDA_App\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.csproj.CopyComplete
 C:\Users\arami\OneDrive\Escritorio\UGDA_App\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.dll
 C:\Users\arami\OneDrive\Escritorio\UGDA_App\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.pdb
+\\Mac\Home\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\Entidades.dll
+\\Mac\Home\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\System.Data.SqlClient.dll
+\\Mac\Home\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\AccesoDatos.dll.config
+\\Mac\Home\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\Entidades.pdb
+\\Mac\Home\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\System.Data.SqlClient.xml

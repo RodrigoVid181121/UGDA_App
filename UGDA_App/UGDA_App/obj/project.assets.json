@@ -518,19 +518,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\arami\\.nuget\\packages\\": {}
+    "C:\\Users\\Rocio\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\UGDA_App\\UGDA_App.csproj",
+      "projectUniqueName": "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\UGDA_App\\UGDA_App.csproj",
       "projectName": "UGDA_App",
-      "projectPath": "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\UGDA_App\\UGDA_App.csproj",
-      "packagesPath": "C:\\Users\\arami\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\UGDA_App\\obj\\",
+      "projectPath": "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\UGDA_App\\UGDA_App.csproj",
+      "packagesPath": "C:\\Users\\Rocio\\.nuget\\packages\\",
+      "outputPath": "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\UGDA_App\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\arami\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Rocio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -538,17 +543,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj"
+            "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj": {
+              "projectPath": "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\Entidades\\Entidades.csproj"
             },
-            "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj": {
-              "projectPath": "C:\\Users\\arami\\OneDrive\\Escritorio\\UGDA_App\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj"
+            "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj": {
+              "projectPath": "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\LogicaNegocios\\LogicaNegocios.csproj"
             }
           }
         }
@@ -587,7 +593,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
