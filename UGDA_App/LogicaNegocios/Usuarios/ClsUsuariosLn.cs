@@ -29,6 +29,7 @@ namespace LogicaNegocios.Usuarios
         }
         #endregion
 
+<<<<<<< Updated upstream
         //método index se utiliza para listar información y mostrarla en pantalla
         #region ComboBox
         public void FillCB(ref ClsCargo obCargo)
@@ -42,6 +43,21 @@ namespace LogicaNegocios.Usuarios
             ExecuteC(ref obCargo);
         }
         #endregion
+=======
+        ////método index se utiliza para listar información y mostrarla en pantalla
+        //#region ComboBox
+        //public void FillCB(ref ClsCargos obCargo)
+        //{
+        //    ObjDatabase = new ClsDatabase()
+        //    {
+        //        TableName = "cargos",
+        //        NameSP = "SP_Cargos_CB",
+        //        Escalar = false,
+        //    };
+        //    ExecuteC(ref obCargo);
+        //}
+        //#endregion
+>>>>>>> Stashed changes
 
         #region CRUD Documentos
         //Crea nuevo usuario con procedimiento almacenado "InsertarUsu"

@@ -16,10 +16,17 @@ namespace UGDA_App
     {
 
         int pc;
+<<<<<<< Updated upstream
         DataTable dt = new DataTable();
 
         //Users usuario = new Users();
         //Validaciones vl = new Validaciones();
+=======
+        ClsCargos obCargo = new ClsCargos();
+        ClsUsuario obUsu = new ClsUsuario();
+        ClsUsuariosLn obUsuLn = new ClsUsuariosLn();
+        Validaciones vl = new Validaciones();
+>>>>>>> Stashed changes
         public users()
         {
             InitializeComponent();
@@ -27,13 +34,19 @@ namespace UGDA_App
 
         private void tbBuscar_Click(object sender, EventArgs e)
         {
+<<<<<<< Updated upstream
 
+=======
+            CargarTabla();
+            //CargarCargos();
+>>>>>>> Stashed changes
         }
 
         private void users_Load(object sender, EventArgs e)
         {
             cargar();
         }
+<<<<<<< Updated upstream
 
         public void cargar()
         {
@@ -41,6 +54,24 @@ namespace UGDA_App
             //dgvbuscar.DataSource = dt;
             //usuario.llenarcb(cbcargo);
         }
+=======
+        //public void CargarCargos()
+        //{
+        //    obCargo = new ClsCargos();
+        //    obUsuLn.FillCB(ref obCargo);
+        //    if (obUsu.ErrorMessage == null)
+        //    {
+        //        cbcargo.DataSource = obUsu.DtResults;
+        //        cbcargo.DisplayMember = "Cargo";
+        //        cbcargo.ValueMember = "ID";
+        //        cbcargo.SelectedIndex = -1;
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show(obCargo.ErrorMessage, "Mensaje de error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //    }
+        //}
+>>>>>>> Stashed changes
 
         public void Limpiar()
         {
@@ -55,15 +86,79 @@ namespace UGDA_App
             txtcontra.Clear();
             txtConf.Clear();
         }
+<<<<<<< Updated upstream
 
         private void tbSubs_Click(object sender, EventArgs e)
         {
 
+=======
+        private void CrearUsuario(string nombre, string apellido, int id_cargo, string correo, string contraseña, string carnet)
+        {
+
+            obUsu = new ClsUsuario();
+            obUsu.Nombre = nombre;
+            obUsu.Apellido = apellido;
+            obUsu.Id_cargo = id_cargo;
+            obUsu.Correo = correo;
+            obUsu.Contraseña = contraseña;
+            obUsu.Carnet = carnet;
+            obUsuLn.Create(ref obUsu);
+            if (obUsu.ErrorMessage == null)
+            {
+                Limpiar();
+                MessageBox.Show("Usuario registrado correctamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //CargarCargos();
+                CargarTabla();
+            }
+            else
+            {
+                MessageBox.Show(obUsu.ErrorMessage, "Error al guardar el usuario", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void EliminarUsuario(string carnet)
+        {
+
+            obUsu = new ClsUsuario();
+            obUsu.Carnet = carnet;
+            obUsuLn.Delete(ref obUsu);
+            if (obUsu.ErrorMessage == null)
+            {
+                Limpiar();
+                MessageBox.Show("Usuario eliminado con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //CargarCargos();
+                CargarTabla();
+            }
+            else
+            {
+                MessageBox.Show(obUsu.ErrorMessage, "Error al eliminar el usuario", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+>>>>>>> Stashed changes
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+<<<<<<< Updated upstream
+=======
+            obUsu = new ClsUsuario();
+            obUsu.Nombre = nombre;
+            obUsu.Apellido = apellido;
+            obUsu.Correo = correo;
+            obUsu.Contraseña = contraseña;
+            obUsu.Carnet = carnet;
+            obUsuLn.Update(ref obUsu);
+            if (obUsu.ErrorMessage == null)
+            {
+                Limpiar();
+                MessageBox.Show("Usuario actualizadp correctamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //CargarCargos();
+                CargarTabla();
+            }
+            else
+            {
+                MessageBox.Show(obUsu.ErrorMessage, "Error al actualizar el usuario", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+>>>>>>> Stashed changes
         }
 
         private void btnAñadir_Click(object sender, EventArgs e)
@@ -76,6 +171,7 @@ namespace UGDA_App
             {
                 if (txtConf.Text == txtcontra.Text)
                 {
+<<<<<<< Updated upstream
                     //if (cbcargo.Text == "Jefe")
                     //{
                     //    if (usuario.InsertarUsu(txtnom.Text.Trim(), txtapellido.Text.Trim(), 1, txtcorreo.Text.Trim(), txtcontra.Text.Trim(), txtcarnet.Text.Trim()))
@@ -112,6 +208,53 @@ namespace UGDA_App
                     //        cargar();
                     //    }
                     //}
+=======
+                    if (cbcargo.Text == "Jefe")
+                    {
+                        try
+                        {
+                            CrearUsuario(txtnom.Text.Trim(), txtapellido.Text.Trim(), 1, txtcorreo.Text.Trim(), txtcontra.Text.Trim(), txtcarnet.Text.Trim());
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+
+                    }
+                    else if (cbcargo.Text == "Subjefe")
+                    {
+                        try
+                        {
+                            CrearUsuario(txtnom.Text.Trim(), txtapellido.Text.Trim(), 2, txtcorreo.Text.Trim(), txtcontra.Text.Trim(), txtcarnet.Text.Trim());
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+                    }
+                    else if (cbcargo.Text == "Secretaria")
+                    {
+                        try
+                        {
+                            CrearUsuario(txtnom.Text.Trim(), txtapellido.Text.Trim(), 3, txtcorreo.Text.Trim(), txtcontra.Text.Trim(), txtcarnet.Text.Trim());
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+                    }
+                    else if (cbcargo.Text == "Operador")
+                    {
+                        try
+                        {
+                            CrearUsuario(txtnom.Text.Trim(), txtapellido.Text.Trim(), 4, txtcorreo.Text.Trim(), txtcontra.Text.Trim(), txtcarnet.Text.Trim());
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+                    }
+>>>>>>> Stashed changes
                 }
             }
         }
@@ -175,6 +318,7 @@ namespace UGDA_App
             {
                 try
                 {
+<<<<<<< Updated upstream
                     if (txtConf.Text.Trim() == txtcontra.Text.Trim())
                     {
                         //if (cbcargo.Text == "Jefe")
@@ -223,6 +367,16 @@ namespace UGDA_App
                 {
                     MessageBox.Show(ex.ToString());
                 }
+=======
+                    EditarUsuario(txtnom.Text.Trim(), txtapellido.Text.Trim(), txtcorreo.Text.Trim(), txtcontra.Text.Trim(), txtcarnet.Text.Trim());
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+
+>>>>>>> Stashed changes
             }
         }
 
