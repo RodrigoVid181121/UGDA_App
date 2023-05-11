@@ -35,7 +35,7 @@ namespace LogicaNegocios.Documentos
             ObjDatabase = new ClsDatabase()
             {
                 TableName = "Documents",
-                NameSP = "InsertarDoc",
+                NameSP = "SP_InsertarDoc",
                 Escalar = true,
             };
 
@@ -48,24 +48,12 @@ namespace LogicaNegocios.Documentos
             Execute(ref obDoc);
         }
 
-        public void Read(ref ClsDocument obDoc)
-        {
-            ObjDatabase = new ClsDatabase()
-            {
-                TableName = "Documents",
-                NameSP = "[].[SP_Docs_Read]",
-                Escalar = false,
-            };
-            ObjDatabase.DtParameters.Rows.Add(@"@id_documento", "4", obDoc.IdDocs);
-            Execute(ref obDoc);
-        }
-
         public void Update(ref ClsDocument obDoc, ref ClsUnidadProductora objUnidad, ref ClsUsuario objUsuario, ref ClsSubSerie objSub)
         {
             ObjDatabase = new ClsDatabase()
             {
                 TableName = "Documents",
-                NameSP = "UpdateDoc",
+                NameSP = "SP_UpdateDoc",
                 Escalar = true,
             };
             ObjDatabase.DtParameters.Rows.Add(@"@codigodoc", "16", obDoc.CodigoDoc);
@@ -84,7 +72,7 @@ namespace LogicaNegocios.Documentos
             ObjDatabase = new ClsDatabase()
             {
                 TableName = "Documents",
-                NameSP = "DeleteDoc",
+                NameSP = "SP_DeleteDoc",
                 Escalar = true,
             };
             ObjDatabase.DtParameters.Rows.Add(@"@codigodoc", "16", obDoc.CodigoDoc);

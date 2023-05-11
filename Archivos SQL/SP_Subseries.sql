@@ -24,10 +24,18 @@ SELECT id_subserie as ID, nombre_subserie as Subserie, codigo_subserie as Codigo
 end
 go
 
-alter procedure SP_ListSer
+Create procedure SP_ListSer
 as
 begin
 SELECT id_serie as ID, nombre_serie as Serie
  FROM series s
+end
+go
+
+Create procedure SP_ListSub
+as
+begin
+SELECT id_subserie as ID, nombre_subserie as SubSerie
+ FROM subseries s
 end
 go

@@ -1,5 +1,6 @@
 ﻿using AccesoDatos.DB;
 using Entidades.Series;
+using Entidades.Subseries;
 using System;
 using System.Data;
 
@@ -33,6 +34,17 @@ namespace LogicaNegocios.Series
                 Escalar = false,
             };
             Execute(ref objSer);
+        }
+
+        public void ListarSeries(ref ClsSerie objSub)
+        {
+            ObjDatabase = new ClsDatabase()
+            {
+                TableName = "subseries",
+                NameSP = "SP_ListSer",
+                Escalar = false,
+            };
+            Execute(ref objSub);
         }
         #endregion
 

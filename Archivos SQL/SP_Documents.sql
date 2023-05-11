@@ -41,7 +41,6 @@ WHERE id_documento=@Iddoc
 go
 
 create procedure SP_DeleteDoc
-
 @codigodoc nchar(9), @carnet nchar(6)
 as
 DECLARE @Idus int, @Iddoc int

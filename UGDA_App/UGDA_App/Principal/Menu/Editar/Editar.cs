@@ -92,11 +92,11 @@ namespace UGDA_App.Forms
         }
         private void cargarSeries()
         {
-            objSub = new ClsSubSerie();
-            objSubLn.ListarSeries(ref objSub);
-            if (objSub.ErrorMessage == null)
+            objSerie = new ClsSerie();
+            objSerieLn.ListarSeries(ref objSerie);
+            if (objSerie.ErrorMessage == null)
             {
-                cbSer.DataSource = objSub.DtResults;
+                cbSer.DataSource = objSerie.DtResults;
                 cbSer.DisplayMember = "Serie";
                 cbSer.ValueMember = "ID";
                 cbSer.SelectedIndex = -1;

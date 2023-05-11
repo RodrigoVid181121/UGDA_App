@@ -26,12 +26,12 @@ namespace LogicaNegocios.Subseries
             Execute(ref objSub);
         }
 
-        public void ListarSeries(ref ClsSubSerie objSub)
+        public void ListarSubSeries(ref ClsSubSerie objSub)
         {
             ObjDatabase = new ClsDatabase()
             {
                 TableName = "subseries",
-                NameSP = "SP_ListSer",
+                NameSP = "SP_ListSub",
                 Escalar = false,
             };
             Execute(ref objSub);
