@@ -46,9 +46,12 @@
   <ItemGroup>
     <Compile Include="Bitacora\ClsBitacoraLn.cs" />
     <Compile Include="Documentos\ClsDocumentLn.cs" />
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Series\ClsSeriesLn.cs" />
     <Compile Include="Subseries\ClsSubseriesLn.cs" />
+    <Compile Include="Usuarios\ClsUsuariosLn.cs" />
+    <Compile Include="Validaciones.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AccesoDatos\AccesoDatos.csproj">
@@ -61,8 +64,31 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\AccesoDatos.dll.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\LogicaNegocios.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\LogicaNegocios.csproj.CopyComplete" />
+    <None Include="obj\Debug\LogicaNegocios.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Release\LogicaNegocios.csproj.AssemblyReference.cache" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="bin\Debug\AccesoDatos.dll" />
+    <Content Include="bin\Debug\AccesoDatos.pdb" />
+    <Content Include="bin\Debug\Entidades.dll" />
+    <Content Include="bin\Debug\Entidades.pdb" />
+    <Content Include="bin\Debug\LogicaNegocios.dll" />
+    <Content Include="bin\Debug\LogicaNegocios.pdb" />
+    <Content Include="bin\Debug\System.Data.SqlClient.dll" />
+    <Content Include="bin\Debug\System.Data.SqlClient.xml" />
+    <Content Include="obj\Debug\LogicaNegocios.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\LogicaNegocios.dll" />
+    <Content Include="obj\Debug\LogicaNegocios.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 
-namespace ServicioSocial.Forms.Clases
+namespace LogicaNegocios
 {
-    class Validaciones
+    public class Validaciones
     {
         public bool email(string email)
         {

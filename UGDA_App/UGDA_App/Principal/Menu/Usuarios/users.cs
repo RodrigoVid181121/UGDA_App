@@ -1,4 +1,5 @@
-﻿//using UGDA_App.Forms.Clases;
+﻿using LogicaNegocios.Usuarios;
+using LogicaNegocios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,37 +10,62 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidades.Usuarios;
+using Entidades.Cargos;
+using Entidades.Series;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace UGDA_App
 {
     public partial class users : Form
     {
 
-        int pc;
-        DataTable dt = new DataTable();
-
-        //Users usuario = new Users();
-        //Validaciones vl = new Validaciones();
+        int pc;    
+        ClsCargos obCargo =new ClsCargos();
+        ClsUsuario obUsu = new ClsUsuario();
+        ClsUsuariosLn obUsuLn = new ClsUsuariosLn();
+        Validaciones vl = new Validaciones();
         public users()
         {
             InitializeComponent();
         }
-
-        private void tbBuscar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void users_Load(object sender, EventArgs e)
         {
-            cargar();
+            CargarTabla();
+            CargarCargos();
         }
 
-        public void cargar()
+        public void CargarTabla()
         {
-            //dt = usuario.MostrarDatos();
-            //dgvbuscar.DataSource = dt;
-            //usuario.llenarcb(cbcargo);
+            obUsu = new ClsUsuario();
+            obUsuLn.Index(ref obUsu);
+            if (obUsu.ErrorMessage == null)
+            {
+                dgvbuscar.DataSource = obUsu.DtResults;
+                dgvbuscar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+                dgvbuscar.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+                dgvbuscar.Columns[3].Visible = false;
+            }
+            else
+            {
+                MessageBox.Show(obUsu.ErrorMessage, "Mensaje de error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public void CargarCargos()
+        {
+            obCargo = new ClsCargos();
+            obUsuLn.FillCB(ref obCargo);
+            if (obUsu.ErrorMessage == null)
+            {
+                cbcargo.DataSource = obUsu.DtResults;
+                cbcargo.DisplayMember = "Cargo";
+                cbcargo.ValueMember = "ID";
+                cbcargo.SelectedIndex = -1;
+            }
+            else
+            {
+                MessageBox.Show(obCargo.ErrorMessage, "Mensaje de error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         public void Limpiar()
@@ -55,17 +81,69 @@ namespace UGDA_App
             txtcontra.Clear();
             txtConf.Clear();
         }
-
-        private void tbSubs_Click(object sender, EventArgs e)
+        private void CrearUsuario(string nombre, string apellido, int id_cargo, string correo, string contraseña, string carnet)
+        {
+            
+                obUsu = new ClsUsuario();
+                obUsu.Nombre = nombre;
+                obUsu.Apellido = apellido;
+                obUsu.Id_cargo = id_cargo;
+                obUsu.Correo = correo;
+                obUsu.Contraseña = contraseña;
+                obUsu.Carnet = carnet;
+                obUsuLn.Create(ref obUsu);
+                if (obUsu.ErrorMessage == null)
+                {
+                    Limpiar();
+                    MessageBox.Show("Usuario registrado correctamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    CargarCargos();
+                    CargarTabla();
+                }
+                else
+                {
+                    MessageBox.Show(obUsu.ErrorMessage, "Error al guardar el usuario", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        private void EliminarUsuario(string carnet)
         {
 
+            obUsu = new ClsUsuario();           
+            obUsu.Carnet = carnet;
+            obUsuLn.Delete(ref obUsu);
+            if (obUsu.ErrorMessage == null)
+            {
+                Limpiar();
+                MessageBox.Show("Usuario eliminado con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CargarCargos();
+                CargarTabla();
+            }
+            else
+            {
+                MessageBox.Show(obUsu.ErrorMessage, "Error al eliminar el usuario", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void EditarUsuario(string nombre, string apellido, string correo, string contraseña, string carnet)
         {
 
+            obUsu = new ClsUsuario();
+            obUsu.Nombre = nombre;
+            obUsu.Apellido = apellido;
+            obUsu.Correo = correo;
+            obUsu.Contraseña = contraseña;
+            obUsu.Carnet = carnet;
+            obUsuLn.Update(ref obUsu);
+            if (obUsu.ErrorMessage == null)
+            {
+                Limpiar();
+                MessageBox.Show("Usuario actualizadp correctamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CargarCargos();
+                CargarTabla();
+            }
+            else
+            {
+                MessageBox.Show(obUsu.ErrorMessage, "Error al actualizar el usuario", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-
         private void btnAñadir_Click(object sender, EventArgs e)
         {
             if (cbcargo.Text == "" || txtnom.Text == "" || txtapellido.Text == "" || txtcorreo.Text == "" || txtcarnet.Text == "" || txtcontra.Text == "" || txtConf.Text == "")
@@ -76,56 +154,64 @@ namespace UGDA_App
             {
                 if (txtConf.Text == txtcontra.Text)
                 {
-                    //if (cbcargo.Text == "Jefe")
-                    //{
-                    //    if (usuario.InsertarUsu(txtnom.Text.Trim(), txtapellido.Text.Trim(), 1, txtcorreo.Text.Trim(), txtcontra.Text.Trim(), txtcarnet.Text.Trim()))
-                    //    {
-                    //        Limpiar();
-                    //        MessageBox.Show("Usuario registrado correctamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    //        cargar();
-                    //    }
-                    //}
-                    //else if (cbcargo.Text == "Subjefe")
-                    //{
-                    //    if (usuario.InsertarUsu(txtnom.Text.Trim(), txtapellido.Text.Trim(), 2, txtcorreo.Text.Trim(), txtcontra.Text.Trim(), txtcarnet.Text.Trim().Trim()))
-                    //    {
-                    //        Limpiar();
-                    //        MessageBox.Show("Usuario registrado correctamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    //        cargar();
-                    //    }
-                    //}
-                    //else if (cbcargo.Text == "Secretaria")
-                    //{
-                    //    if (usuario.InsertarUsu(txtnom.Text.Trim(), txtapellido.Text.Trim(), 3, txtcorreo.Text.Trim(), txtcontra.Text.Trim(), txtcarnet.Text.Trim()))
-                    //    {
-                    //        Limpiar();
-                    //        MessageBox.Show("Usuario registrado correctamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    //        cargar();
-                    //    }
-                    //}
-                    //else if (cbcargo.Text == "Operador")
-                    //{
-                    //    if (usuario.InsertarUsu(txtnom.Text.Trim(), txtapellido.Text.Trim(), 4, txtcorreo.Text.Trim(), txtcontra.Text.Trim(), txtcarnet.Text.Trim()))
-                    //    {
-                    //        Limpiar();
-                    //        MessageBox.Show("Usuario registrado correctamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    //        cargar();
-                    //    }
-                    //}
+                    if (cbcargo.Text == "Jefe")
+                    {
+                        try
+                        {
+                            CrearUsuario(txtnom.Text.Trim(), txtapellido.Text.Trim(), 1, txtcorreo.Text.Trim(), txtcontra.Text.Trim(), txtcarnet.Text.Trim());
+                        }catch(Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+                        
+                    }
+                    else if (cbcargo.Text == "Subjefe")
+                    {
+                        try
+                        {
+                            CrearUsuario(txtnom.Text.Trim(), txtapellido.Text.Trim(), 2, txtcorreo.Text.Trim(), txtcontra.Text.Trim(), txtcarnet.Text.Trim());
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+                    }
+                    else if (cbcargo.Text == "Secretaria")
+                    {
+                        try
+                        {
+                            CrearUsuario(txtnom.Text.Trim(), txtapellido.Text.Trim(), 3, txtcorreo.Text.Trim(), txtcontra.Text.Trim(), txtcarnet.Text.Trim());
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+                    }
+                    else if (cbcargo.Text == "Operador")
+                    {
+                        try
+                        {
+                            CrearUsuario(txtnom.Text.Trim(), txtapellido.Text.Trim(), 4, txtcorreo.Text.Trim(), txtcontra.Text.Trim(), txtcarnet.Text.Trim());
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+                    }
                 }
             }
         }
 
         private void txtcarnet_Leave_1(object sender, EventArgs e)
         {
-            //if (vl.carnet(txtcarnet.Text) == false)
-            //{
-            //    errorProvider1.SetError(txtcarnet, "Carnet Inválido");
-            //}
-            //else
-            //{
-            //    errorProvider1.Clear();
-            //}
+            if (vl.carnet(txtcarnet.Text) == false)
+            {
+                errorProvider1.SetError(txtcarnet, "Carnet Inválido");
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
         }
 
         private void btneliminar_Click_1(object sender, EventArgs e)
@@ -134,11 +220,7 @@ namespace UGDA_App
             {
                 if (MessageBox.Show("¿Está seguro que desea eliminar este usuario?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
                 {
-                    //if (usuario.EliminarUsu(txtcarnet.Text))
-                    //    MessageBox.Show("Usuario eliminado con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    //dgvbuscar.DataSource = usuario.MostrarDatos();
-                    //Limpiar();
-                    //cargar();
+                    EliminarUsuario(txtcarnet.Text);
                 }
             }
             else
@@ -150,19 +232,14 @@ namespace UGDA_App
 
         private void txtcorreo_Leave(object sender, EventArgs e)
         {
-            //if (vl.email(txtcorreo.Text) == false)
-            //{
-            //    errorProvider1.SetError(txtcorreo, "Correo invalido");
-            //}
-            //else
-            //{
-            //    errorProvider1.Clear();
-            //}
-        }
-
-        private void txtBuscar_TextChanged(object sender, EventArgs e)
-        {
-            dt.DefaultView.RowFilter = $"nombre LIKE '{txtBuscar.Text}%'";
+            if (vl.email(txtcorreo.Text) == false)
+            {
+                errorProvider1.SetError(txtcorreo, "Correo invalido");
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
         }
 
         private void btnedit_Click(object sender, EventArgs e)
@@ -175,54 +252,14 @@ namespace UGDA_App
             {
                 try
                 {
-                    if (txtConf.Text.Trim() == txtcontra.Text.Trim())
-                    {
-                        //if (cbcargo.Text == "Jefe")
-                        //{
-                        //    if (usuario.ActualizarUsu(txtnom.Text.Trim(), txtapellido.Text.Trim(), 1, txtcorreo.Text.Trim(), txtcontra.Text.Trim(), txtcarnet.Text.Trim()))
-                        //    {
-                        //        Limpiar();
-                        //        MessageBox.Show("Información actualizada correctamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        //        cargar();
-                        //    }
-                        //}
-                        //if (cbcargo.Text == "Subjefe")
-                        //{
-                        //    if (usuario.ActualizarUsu(txtnom.Text.Trim(), txtapellido.Text.Trim(), 2, txtcorreo.Text.Trim(), txtcontra.Text.Trim(), txtcarnet.Text.Trim()))
-                        //    {
-                        //        Limpiar();
-                        //        MessageBox.Show("Información actualizada correctamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        //        cargar();
-                        //    }
-                        //}
-                        //if (cbcargo.Text == "Secretaria")
-                        //{
-                        //    if (usuario.ActualizarUsu(txtnom.Text.Trim(), txtapellido.Text.Trim(), 3, txtcorreo.Text.Trim(), txtcontra.Text.Trim(), txtcarnet.Text.Trim()))
-                        //    {
-                        //        Limpiar();
-                        //        MessageBox.Show("Información actualizada correctamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        //        cargar();
-                        //    }
-                        //}
-                        //if (cbcargo.Text == "Operador")
-                        //{
-                        //    if (usuario.ActualizarUsu(txtnom.Text.Trim(), txtapellido.Text.Trim(), 4, txtcorreo.Text.Trim(), txtcontra.Text.Trim(), txtcarnet.Text.Trim()))
-                        //    {
-                        //        Limpiar();
-                        //        MessageBox.Show("Información actualizada correctamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        //        cargar();
-                        //    }
-                        //}
-                    }
-                    else
-                    {
-                        MessageBox.Show("Las contraseñas no coinciden", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                   EditarUsuario(txtnom.Text.Trim(), txtapellido.Text.Trim(),txtcorreo.Text.Trim(), txtcontra.Text.Trim(), txtcarnet.Text.Trim());
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.ToString());
+                   MessageBox.Show(ex.Message);
                 }
+                            
+                      
             }
         }
 
@@ -274,16 +311,16 @@ namespace UGDA_App
             txtcarnet.Text = carnet;
         }
 
-        private void txtBuscar_TextChanged_1(object sender, EventArgs e)
-        {
-            if (cmbfiltro.SelectedIndex == 0)
-            {
-                dt.DefaultView.RowFilter = $"Carnet LIKE '{txtBuscar.Text}%'";
-            }
-            else if (cmbfiltro.SelectedIndex == 1)
-            {
-                dt.DefaultView.RowFilter = $"Nombre LIKE '{txtBuscar.Text}%'";
-            }
-        }
+        //private void txtBuscar_TextChanged_1(object sender, EventArgs e)
+        //{
+        //    if (cmbfiltro.SelectedIndex == 0)
+        //    {
+        //        dt.DefaultView.RowFilter = $"Carnet LIKE '{txtBuscar.Text}%'";
+        //    }
+        //    else if (cmbfiltro.SelectedIndex == 1)
+        //    {
+        //        dt.DefaultView.RowFilter = $"Nombre LIKE '{txtBuscar.Text}%'";
+        //    }
+        //}
     }
 }

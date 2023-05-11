@@ -41,7 +41,7 @@ SELECT u.carnet as Carnet, u.nombre as Nombre, u.apellido as Apellido, u.correo 
 Create procedure SP_Cargos_CB
 as
 begin
-SELECT  c.nombre_cargo as Cargo
+SELECT  c.nombre_cargo as Cargo, c.id_cargo as ID
  FROM cargos c 
 end
 

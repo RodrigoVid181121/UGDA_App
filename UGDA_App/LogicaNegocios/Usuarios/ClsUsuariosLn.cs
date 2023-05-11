@@ -9,7 +9,7 @@ using System.Data;
 
 namespace LogicaNegocios.Usuarios
 {
-    internal class ClsUsuariosLn
+    public class ClsUsuariosLn
     {
         #region variables Privadas
         private ClsDatabase ObjDatabase = null;
@@ -31,7 +31,7 @@ namespace LogicaNegocios.Usuarios
 
         //método index se utiliza para listar información y mostrarla en pantalla
         #region ComboBox
-        public void FillCB(ref ClsCargo obCargo)
+        public void FillCB(ref ClsCargos obCargo)
         {
             ObjDatabase = new ClsDatabase()
             {
@@ -109,7 +109,7 @@ namespace LogicaNegocios.Usuarios
         #endregion
 
         #region Métodos privados
-        private void ExecuteC(ref ClsCargo objcar)
+        private void ExecuteC(ref ClsCargos objcar)
         {
 
             ObjDatabase.CRUD(ref ObjDatabase);
@@ -128,7 +128,7 @@ namespace LogicaNegocios.Usuarios
                         foreach (DataRow item in objcar.DtResults.Rows)
                         {
                             objcar.Id_cargo = (int)Convert.ToInt64(item["id_cargo"].ToString());                          
-                            objcar.Nombre_Cargo = item["nombre_cargo"].ToString();
+                            objcar.Nombre_cargo = item["nombre_cargo"].ToString();
                         }
                     }
                 }
