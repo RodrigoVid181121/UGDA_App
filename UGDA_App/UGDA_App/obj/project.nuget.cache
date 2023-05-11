@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HRqkBHv7TJuO+K+5eECFLYnLSxCSEe2vKSPx98AHV0sE/z+f3Xjavl2ltoQifcYmIQ2eeZrK7ofa1qSbb1cncQ==",
+  "dgSpecHash": "w5ev+CDGMfI/uxZKSuGIk1X8Av9ZceXSujyzd8iHb3qrhAAbu+AnSyL3+ytvUnDX9xEyx3LpYR5u4CCuqBymNA==",
   "success": true,
-  "projectFilePath": "\\\\Mac\\Home\\Documents\\GitHub\\UGDA_App\\UGDA_App\\UGDA_App\\UGDA_App.csproj",
+  "projectFilePath": "D:\\Documents\\GitHub\\UGDA_App\\UGDA_App\\UGDA_App\\UGDA_App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rocio\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Rocio\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

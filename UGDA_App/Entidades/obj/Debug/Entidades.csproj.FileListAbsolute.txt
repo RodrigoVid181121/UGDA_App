@@ -25,3 +25,12 @@ C:\Users\arami\OneDrive\Escritorio\UGDA_App\UGDA_App\Entidades\obj\Debug\Entidad
 \\Mac\Home\Documents\GitHub\UGDA_App\UGDA_App\Entidades\obj\Debug\Entidades.csproj.CopyComplete
 \\Mac\Home\Documents\GitHub\UGDA_App\UGDA_App\Entidades\obj\Debug\Entidades.dll
 \\Mac\Home\Documents\GitHub\UGDA_App\UGDA_App\Entidades\obj\Debug\Entidades.pdb
+D:\Documents\GitHub\UGDA_App\UGDA_App\Entidades\bin\Debug\Entidades.dll
+D:\Documents\GitHub\UGDA_App\UGDA_App\Entidades\bin\Debug\Entidades.pdb
+D:\Documents\GitHub\UGDA_App\UGDA_App\Entidades\bin\Debug\System.Data.SqlClient.dll
+D:\Documents\GitHub\UGDA_App\UGDA_App\Entidades\bin\Debug\System.Data.SqlClient.xml
+D:\Documents\GitHub\UGDA_App\UGDA_App\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+D:\Documents\GitHub\UGDA_App\UGDA_App\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\UGDA_App\UGDA_App\Entidades\obj\Debug\Entidades.csproj.CopyComplete
+D:\Documents\GitHub\UGDA_App\UGDA_App\Entidades\obj\Debug\Entidades.dll
+D:\Documents\GitHub\UGDA_App\UGDA_App\Entidades\obj\Debug\Entidades.pdb

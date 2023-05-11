@@ -40,3 +40,16 @@ C:\Users\arami\OneDrive\Escritorio\UGDA_App\UGDA_App\LogicaNegocios\obj\Debug\Lo
 \\Mac\Home\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\AccesoDatos.dll.config
 \\Mac\Home\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\Entidades.pdb
 \\Mac\Home\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\System.Data.SqlClient.xml
+D:\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\LogicaNegocios.dll
+D:\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\LogicaNegocios.pdb
+D:\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\AccesoDatos.dll
+D:\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\Entidades.dll
+D:\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\AccesoDatos.pdb
+D:\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\AccesoDatos.dll.config
+D:\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\Entidades.pdb
+D:\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\bin\Debug\System.Data.SqlClient.xml
+D:\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.csproj.AssemblyReference.cache
+D:\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.csproj.CopyComplete
+D:\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.dll
+D:\Documents\GitHub\UGDA_App\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.pdb

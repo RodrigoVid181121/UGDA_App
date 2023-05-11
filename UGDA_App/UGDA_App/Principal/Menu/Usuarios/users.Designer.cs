@@ -97,7 +97,6 @@
             tbSeries.Size = new Size(786, 448);
             tbSeries.TabIndex = 0;
             tbSeries.Text = "Buscar";
-            tbSeries.Click += tbBuscar_Click;
             // 
             // panel1
             // 
@@ -124,7 +123,6 @@
             txtBuscar.PlaceholderText = "Buscar Usuario";
             txtBuscar.Size = new Size(312, 25);
             txtBuscar.TabIndex = 26;
-            txtBuscar.TextChanged += txtBuscar_TextChanged_1;
             // 
             // cmbfiltro
             // 
@@ -211,7 +209,6 @@
             tbSubs.Size = new Size(786, 448);
             tbSubs.TabIndex = 1;
             tbSubs.Text = "Agregar";
-            tbSubs.Click += tbSubs_Click;
             // 
             // pcView2
             // 
@@ -341,7 +338,6 @@
             label1.Size = new Size(88, 25);
             label1.TabIndex = 27;
             label1.Text = "Nombre:";
-            label1.Click += label1_Click;
             // 
             // pictureBox2
             // 
