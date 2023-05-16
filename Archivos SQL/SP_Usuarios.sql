@@ -44,4 +44,17 @@ begin
 SELECT  c.nombre_cargo as Cargo
  FROM cargos c 
 end
+go
+
+ALTER PROCEDURE SP_Login
+@Contraseña varchar(50), @carnet nchar(6)
+as
+begin
+SELECT c.id_cargo as Cargo, u.nombre as Nombre, u.apellido as Apellido
+FROM usuarios u
+INNER JOIN cargos c on c.id_cargo = u.id_cargo
+WHERE u.carnet = @carnet AND u.contrasenia = @Contraseña
+end
+go
+
 

@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="Informe\Informe.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Principal\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -28,10 +25,5 @@
     <Compile Update="Principal\Menu\Usuarios\users.cs">
       <SubType>Form</SubType>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Update="db_alcaldiaDataSet.xsd">
-      <SubType>Designer</SubType>
-    </None>
   </ItemGroup>
 </Project>

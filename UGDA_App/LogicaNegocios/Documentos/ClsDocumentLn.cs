@@ -101,14 +101,14 @@ namespace LogicaNegocios.Documentos
                     {
                         foreach(DataRow item in objDoc.DtResults.Rows) 
                         {
-                            objDoc.IdDocs = (int)Convert.ToInt64(item["id_documento"].ToString());
-                            objDoc.IdSubSerie = (int)Convert.ToInt64(item["id_subserie"].ToString());
-                            objDoc.IdUnidad = (int)Convert.ToInt64(item["id_unidad_productora"].ToString());
-                            objDoc.IdUsuario = (int)Convert.ToInt64(item["id_usuario"].ToString());
-                            objDoc.CodigoDoc = item["codigo_documento"].ToString();
-                            objDoc.Descripcion = item["descripcion"].ToString();
-                            objDoc.Año = item["anio"].ToString();
-                            objDoc.Ubicación = item["ubicacion"].ToString();
+                            objDoc.IdDocs = (int)Convert.ToInt64(item["ID"].ToString());
+                            objDoc.IdSubSerie = (int)Convert.ToInt64(item["IDSS"].ToString());
+                            objDoc.IdUnidad = (int)Convert.ToInt64(item["UDP"].ToString());
+                            objDoc.IdUsuario = (int)Convert.ToInt64(item["IDUS"].ToString());
+                            objDoc.CodigoDoc = item["Codigo"].ToString();
+                            objDoc.Descripcion = item["Descripción"].ToString();
+                            objDoc.Año = item["Año"].ToString();
+                            objDoc.Ubicación = item["Ubicación"].ToString();
                         }
                     }
                 }

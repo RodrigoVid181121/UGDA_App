@@ -1,11 +1,13 @@
-//using UGDA_App.Forms.Clases;
-using System.Runtime.InteropServices;
+using Entidades.Usuarios;
+using LogicaNegocios.Usuarios;
 
 namespace UGDA_App
 {
     public partial class login : Form
     {
-        //Login ln = new Login();
+        ClsUsuario objUsuario = null;
+        ClsUsuarioLn objUser = new ClsUsuarioLn();
+        main frMain = new main();
         public login()
         {
             InitializeComponent();
@@ -42,8 +44,40 @@ namespace UGDA_App
         {
             if (txtuser.Text!="" && txtpass.Text!="")
             {
-                //if(ln.Logeo(txtuser.Text, txtpass.Text))
-                this.Hide();
+                objUsuario = new ClsUsuario()
+                {
+                    Carnet = txtuser.Text,
+                    Contraseña = txtpass.Text
+                };
+
+                objUser.Login(ref objUsuario);
+
+                if(objUsuario.ErrorMessage == null)
+                {
+                    if(objUsuario.Id_cargo == 1 || objUsuario.Id_cargo == 2)
+                    {                        
+                        frMain.Show();
+                        this.Hide();
+                    }
+                    else if(objUsuario.Id_cargo == 3 || objUsuario.Id_cargo == 4)
+                    {
+                        frMain.btnbitacora.Visible = false;
+                        frMain.btnuser.Visible = false;
+                        frMain.btn_Edit.Visible = false;
+                        frMain.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(objUsuario.ErrorMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                
             }
             else if(txtuser.Text=="")
             {

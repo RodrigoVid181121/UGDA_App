@@ -404,11 +404,11 @@
         private Label lbUser;
         private Label lbtitulo;
         private Button btnExit;
-        internal Button btnbitacora;
-        internal Button btnuser;
         internal Label label1;
         private Button btnmin;
         private Button btnmax;
-        internal Button btn_Edit;
+        public Button btnbitacora;
+        public Button btnuser;
+        public Button btn_Edit;
     }
 }

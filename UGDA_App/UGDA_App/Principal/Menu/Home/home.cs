@@ -1,4 +1,6 @@
 ﻿//using UGDA_App.Forms.Clases;
+using Entidades.Usuarios;
+using LogicaNegocios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,7 +32,7 @@ namespace UGDA_App
 
         private void home_Load(object sender, EventArgs e)
         {
-            //lbNombreU.Text = Global.nombre_usuario;
+            lbNombreU.Text = Global.nombre_usuario;
         }
     }
 }

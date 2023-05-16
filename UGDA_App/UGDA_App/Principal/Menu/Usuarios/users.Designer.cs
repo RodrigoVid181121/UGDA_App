@@ -130,7 +130,7 @@
             // 
             cmbfiltro.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             cmbfiltro.FormattingEnabled = true;
-            cmbfiltro.Items.AddRange(new object[] { "Código", "Nombre" });
+            cmbfiltro.Items.AddRange(new object[] { "Carnet", "Nombre" });
             cmbfiltro.Location = new Point(412, 31);
             cmbfiltro.Name = "cmbfiltro";
             cmbfiltro.Size = new Size(151, 31);
@@ -175,7 +175,7 @@
             dgvbuscar.Margin = new Padding(2, 1, 2, 1);
             dgvbuscar.Name = "dgvbuscar";
             dgvbuscar.ReadOnly = true;
-            dgvbuscar.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dgvbuscar.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             dgvbuscar.RowTemplate.Height = 41;
             dgvbuscar.Size = new Size(678, 263);
             dgvbuscar.TabIndex = 17;
@@ -365,7 +365,6 @@
             txtcarnet.ReadOnly = true;
             txtcarnet.Size = new Size(217, 25);
             txtcarnet.TabIndex = 25;
-            txtcarnet.Leave += txtcarnet_Leave_1;
             // 
             // txtcorreo
             // 
@@ -378,6 +377,7 @@
             txtcorreo.Name = "txtcorreo";
             txtcorreo.Size = new Size(217, 25);
             txtcorreo.TabIndex = 24;
+            txtcorreo.TextChanged += txtcorreo_TextChanged;
             txtcorreo.Leave += txtcorreo_Leave;
             // 
             // txtapellido

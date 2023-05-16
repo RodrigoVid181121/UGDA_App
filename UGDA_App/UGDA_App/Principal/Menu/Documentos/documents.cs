@@ -8,6 +8,8 @@ using LogicaNegocios.Unidad_Productora;
 using System.Data;
 using System.Drawing.Printing;
 using System.Drawing;
+using LogicaNegocios;
+using LogicaNegocios.Validaciones;
 
 namespace UGDA_App
 {
@@ -20,7 +22,7 @@ namespace UGDA_App
         private readonly ClsDocumentLn objDocumentLn = new ClsDocumentLn();
         private ClsSubseriesLn objSubLn = new ClsSubseriesLn();
         private ClsUnidadLn objUnit = new ClsUnidadLn();
-        DataTable dt = new DataTable();
+        Validaciones val = new Validaciones();
         int pc;
         public documents()
         {
@@ -50,6 +52,10 @@ namespace UGDA_App
                 dgvbuscar.DataSource = objDocument.DtResults;
                 dgvbuscar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
                 dgvbuscar.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+                dgvbuscar.Columns[9].Visible = false;
+                dgvbuscar.Columns[10].Visible = false;
+                dgvbuscar.Columns[11].Visible = false;
+                dgvbuscar.Columns[12].Visible = false;
             }
             else
             {
@@ -103,7 +109,7 @@ namespace UGDA_App
                 };
                 objUser = new ClsUsuario()
                 {
-                    Carnet = "NI0001"
+                    Carnet = Global.carnet_usuario
                 };
                 objUnidad = new ClsUnidadProductora()
                 {
@@ -157,7 +163,7 @@ namespace UGDA_App
                 };
                 objUser = new ClsUsuario()
                 {
-                    Carnet = "NI0001"
+                    Carnet = Global.carnet_usuario
                 };
 
                 objDocumentLn.Delete(ref objDocument, ref objUser);
@@ -189,7 +195,7 @@ namespace UGDA_App
                 };
                 objUser = new ClsUsuario()
                 {
-                    Carnet = "NI0001"
+                    Carnet = Global.carnet_usuario
                 };
                 objUnidad = new ClsUnidadProductora()
                 {
@@ -222,11 +228,10 @@ namespace UGDA_App
 
         private void txtaño_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsNumber(e.KeyChar) && (e.KeyChar != (char)Keys.Back))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
             {
-                errorProvider1.SetError(txtaño, "Solo se admiten números");
+                errorProvider1.SetError(txtaño, "Solo se admiten numeros");
                 e.Handled = true;
-                return;
             }
             else
             {
@@ -301,8 +306,20 @@ namespace UGDA_App
 
             foreach (DataGridViewColumn col in dgvbuscar.Columns)
             {
-                e.Graphics.DrawString(col.HeaderText, font, Brushes.Blue, new RectangleF(0,10,120,20));
-                
+                e.Graphics.DrawString(col.HeaderText, font, Brushes.Blue, new RectangleF(0, 10, 120, 20));
+
+            }
+        }
+
+        private void txtubicacion_TextChanged(object sender, EventArgs e)
+        {
+            if (val.ubicacion(txtubicacion.Text) == false)
+            {
+                errorProvider1.SetError(txtubicacion, "Ubicacion Invalida. \n Debe contener el formato:s BX-EX-CX");
+            }
+            else
+            {
+                errorProvider1.Clear();
             }
         }
     }

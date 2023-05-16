@@ -104,14 +104,6 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
-            "Microsoft.SqlServer.Types": {
-              "target": "Package",
-              "version": "[160.1000.6, )"
-            },
-            "ReportViewerCore.WinForms": {
-              "target": "Package",
-              "version": "[15.1.17, )"
-            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"

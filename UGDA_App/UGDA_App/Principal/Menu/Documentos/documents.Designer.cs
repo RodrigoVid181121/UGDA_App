@@ -381,6 +381,7 @@
             txtubicacion.Name = "txtubicacion";
             txtubicacion.Size = new Size(322, 25);
             txtubicacion.TabIndex = 10;
+            txtubicacion.TextChanged += txtubicacion_TextChanged;
             // 
             // txtcod
             // 

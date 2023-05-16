@@ -57,11 +57,12 @@ DELETE from documentos WHERE id_documento=@Iddoc
 go
 
 
-Create procedure SP_Docs_Index
+create procedure SP_Docs_Index
 as
 begin
 SELECT s.nombre_seccion as Sección, sr.nombre_serie as Serie,ss.nombre_subserie as Subserie,up.nombre_unidad_productora as 'Unidad productora',
- u.carnet as Usuario, codigo_documento as ID,descripcion as Descripción,anio as Año,ubicacion as Ubicación
+ u.carnet as Usuario, codigo_documento as Codigo,descripcion as Descripción,anio as Año,ubicacion as Ubicación, d.id_documento as ID,
+ ss.id_subserie as IDSS, up.id_unidad_productora as UDP, u.id_usuario as IDUS
  FROM documentos d INNER JOIN subseries ss ON d.id_subserie = ss.id_subserie
  Inner JOIN series sr ON ss.id_serie = sr.id_serie
  Inner JOIN secciones s ON sr.id_seccion = s.id_secccion
