@@ -1,0 +1,10 @@
+C:\Users\navas\Desktop\UGDA\UGDA_App\AccesoDatos\bin\Release\AccesoDatos.dll.config
+C:\Users\navas\Desktop\UGDA\UGDA_App\AccesoDatos\bin\Release\AccesoDatos.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\AccesoDatos\bin\Release\AccesoDatos.pdb
+C:\Users\navas\Desktop\UGDA\UGDA_App\AccesoDatos\bin\Release\System.Data.SqlClient.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\AccesoDatos\bin\Release\System.Data.SqlClient.xml
+C:\Users\navas\Desktop\UGDA\UGDA_App\AccesoDatos\obj\Release\AccesoDatos.csproj.AssemblyReference.cache
+C:\Users\navas\Desktop\UGDA\UGDA_App\AccesoDatos\obj\Release\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\navas\Desktop\UGDA\UGDA_App\AccesoDatos\obj\Release\AccesoDatos.csproj.CopyComplete
+C:\Users\navas\Desktop\UGDA\UGDA_App\AccesoDatos\obj\Release\AccesoDatos.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\AccesoDatos\obj\Release\AccesoDatos.pdb

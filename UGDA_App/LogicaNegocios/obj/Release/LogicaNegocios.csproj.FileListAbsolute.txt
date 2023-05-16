@@ -1,0 +1,14 @@
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Release\LogicaNegocios.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Release\LogicaNegocios.pdb
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Release\AccesoDatos.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Release\Entidades.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Release\System.Data.SqlClient.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Release\AccesoDatos.pdb
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Release\AccesoDatos.dll.config
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Release\Entidades.pdb
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Release\System.Data.SqlClient.xml
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\obj\Release\LogicaNegocios.csproj.AssemblyReference.cache
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\obj\Release\LogicaNegocios.csproj.CoreCompileInputs.cache
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\obj\Release\LogicaNegocios.csproj.CopyComplete
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\obj\Release\LogicaNegocios.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\obj\Release\LogicaNegocios.pdb

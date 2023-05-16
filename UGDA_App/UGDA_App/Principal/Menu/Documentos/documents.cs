@@ -5,11 +5,11 @@ using Entidades.Usuarios;
 using LogicaNegocios.Documentos;
 using LogicaNegocios.Subseries;
 using LogicaNegocios.Unidad_Productora;
-using System.Data;
-using System.Drawing.Printing;
-using System.Drawing;
 using LogicaNegocios;
 using LogicaNegocios.Validaciones;
+using iTextSharp.text.pdf;
+using iTextSharp.text;
+using iTextSharp.tool.xml;
 
 namespace UGDA_App
 {
@@ -56,6 +56,8 @@ namespace UGDA_App
                 dgvbuscar.Columns[10].Visible = false;
                 dgvbuscar.Columns[11].Visible = false;
                 dgvbuscar.Columns[12].Visible = false;
+
+                dgvbuscar.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             }
             else
             {
@@ -124,7 +126,7 @@ namespace UGDA_App
 
                 if (objDocument.ErrorMessage == null)
                 {
-                    MessageBox.Show("El código" + codigo + "fue añadido con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("El código: " + codigo + " fue añadido con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     cargarTabla();
                     limpiar();
                 }
@@ -210,7 +212,7 @@ namespace UGDA_App
 
                 if (objDocument.ErrorMessage == null)
                 {
-                    MessageBox.Show("El código" + codigo + "fue actualizado con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("El código: " + codigo + " fue actualizado con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     cargarTabla();
                     limpiar();
                 }
@@ -242,40 +244,65 @@ namespace UGDA_App
 
         private void button2_Click(object sender, EventArgs e)
         {
-            PrintDocument doc = new PrintDocument();
-            doc.DefaultPageSettings.Landscape = true;
-            doc.PrinterSettings.PrinterName = "Microsoft Print to PDF";
+            SaveFileDialog savefile = new SaveFileDialog();
+            savefile.FileName = string.Format("{0}.pdf", DateTime.Now.ToString("ddMMyyyyHHmmss"));
 
-            PrintPreviewDialog ppd = new PrintPreviewDialog { Document = doc };
-            ((Form)ppd).WindowState = FormWindowState.Maximized;
 
-            doc.PrintPage += delegate (object ev, PrintPageEventArgs ep)
+
+            //string PaginaHTML_Texto = "<table border=\"1\"><tr><td>HOLA MUNDO</td></tr></table>";
+            string PaginaHTML_Texto = Properties.Resources.Plantilla.ToString();
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@USUARIO", Global.nombre_usuario);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@FECHA", DateTime.Now.ToString("dd/MM/yyyy"));
+
+            string filas = string.Empty;
+            foreach (DataGridViewRow row in dgvbuscar.Rows)
             {
-                const int altura_celdas = 35;
-                int margin_left = ep.MarginBounds.Left, top = ep.MarginBounds.Top;
+                filas += "<tr>";
+                filas += "<td>" + row.Cells["Serie"].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["Subserie"].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["Unidad productora"].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["Descripción"].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["Codigo"].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["Año"].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["Ubicación"].Value.ToString() + "</td>";
+                filas += "</tr>";
+            }
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@FILAS", filas);
 
-                foreach (DataGridViewColumn col in dgvbuscar.Columns)
-                {
-                    ep.Graphics.DrawString(col.HeaderText, new Font("Times New Roman", 12, FontStyle.Bold), Brushes.Blue, margin_left, top);
-                    margin_left += col.Width;
-                }
-                margin_left = ep.MarginBounds.Left;
-                ep.Graphics.FillRectangle(Brushes.Black, margin_left, top + 40, ep.MarginBounds.Right - margin_left, 3);
-                top += 43;
 
-                foreach (DataGridViewRow row in dgvbuscar.Rows)
+
+            if (savefile.ShowDialog() == DialogResult.OK)
+            {
+                using (FileStream stream = new FileStream(savefile.FileName, FileMode.Create))
                 {
-                    if (row.Index == dgvbuscar.RowCount - 1) break;
-                    margin_left = ep.MarginBounds.Left;
-                    foreach (DataGridViewCell cell in row.Cells)
+                    //Creamos un nuevo documento y lo definimos como PDF
+                    Document pdfDoc = new Document(PageSize.A4, 25, 25, 25, 25);
+
+                    PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
+                    pdfDoc.Open();
+                    pdfDoc.Add(new Phrase(""));
+
+                    //Agregamos la imagen del banner al documento
+                    //iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(Properties.Resources.shop, System.Drawing.Imaging.ImageFormat.Png);
+                    //img.ScaleToFit(60, 60);
+                    //img.Alignment = iTextSharp.text.Image.UNDERLYING;
+
+                    //img.SetAbsolutePosition(10,100);
+                    //img.SetAbsolutePosition(pdfDoc.LeftMargin, pdfDoc.Top - 60);
+                    //pdfDoc.Add(img);
+
+
+                    //pdfDoc.Add(new Phrase("Hola Mundo"));
+                    using (StringReader sr = new StringReader(PaginaHTML_Texto))
                     {
-                        ep.Graphics.DrawString(Convert.ToString(cell.Value), new Font("Times New Roman", 8, FontStyle.Bold), Brushes.Black, margin_left, top + 3);
-                        margin_left += cell.OwningColumn.Width;
+                        XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
                     }
-                    top += altura_celdas;
+
+                    pdfDoc.Close();
+                    stream.Close();
                 }
-            };
-            ppd.ShowDialog();
+
+            }
         }
 
         private void txtbuscar_TextChanged(object sender, EventArgs e)
@@ -297,17 +324,6 @@ namespace UGDA_App
             if (cmbfiltro.SelectedIndex == 3)
             {
                 objDocument.DtResults.DefaultView.RowFilter = $"Descripción LIKE '{txtbuscar.Text}%'";
-            }
-        }
-
-        private void Imprimir(object sender, PrintPageEventArgs e)
-        {
-            Font font = new Font("Times New Roman", 12, FontStyle.Bold, GraphicsUnit.Point);
-
-            foreach (DataGridViewColumn col in dgvbuscar.Columns)
-            {
-                e.Graphics.DrawString(col.HeaderText, font, Brushes.Blue, new RectangleF(0, 10, 120, 20));
-
             }
         }
 

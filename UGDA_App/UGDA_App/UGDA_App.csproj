@@ -2,11 +2,27 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>Docarchive_icon-icons.com_51167.ico</ApplicationIcon>
+    <StartupObject>UGDA_App.Program</StartupObject>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+    <Company>Virtual Solutions</Company>
+    <Description>Aplicación para la gestión y la documentación de archivos y documentos de la UGDA en santa ana
+</Description>
+    <Copyright>Todos los derechos reservados para Virtual Solutions</Copyright>
+    <PackageIcon>Docarchive_icon-icons.com_51167.ico</PackageIcon>
+    <PackAsTool>True</PackAsTool>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>embedded</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +30,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\..\..\..\Downloads\horasAlcaldia-main\ServicioSocial\ss-alcaldia\Docarchive_icon-icons.com_51167.ico">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="iTextSharp" Version="5.5.13.3" />
+    <PackageReference Include="itextsharp.xmlworker" Version="5.5.13.3" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
   </ItemGroup>
 

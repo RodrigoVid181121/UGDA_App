@@ -21,7 +21,7 @@ namespace UGDA_App.Forms
             cargarTablaSubseries();
             cargarSecciones();
             cargarSeries();
-            
+
         }
 
         public void LimpiarSerie()
@@ -109,7 +109,7 @@ namespace UGDA_App.Forms
 
         private void Editar_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void AddSeries_Click(object sender, EventArgs e)
@@ -176,7 +176,8 @@ namespace UGDA_App.Forms
                     MessageBox.Show("Nombre no válido", "Información", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            else {
+            else
+            {
                 MessageBox.Show("Sección no válida", "Información", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -281,6 +282,6 @@ namespace UGDA_App.Forms
             }
         }
 
-        
+
     }
 }

@@ -1,0 +1,17 @@
+C:\Users\navas\Desktop\API_REST\UGDA_App.exe
+C:\Users\navas\Desktop\API_REST\UGDA_App.dll
+C:\Users\navas\Desktop\API_REST\UGDA_App.deps.json
+C:\Users\navas\Desktop\API_REST\UGDA_App.runtimeconfig.json
+C:\Users\navas\Desktop\API_REST\System.Data.SqlClient.dll
+C:\Users\navas\Desktop\API_REST\runtimes\win-arm64\native\sni.dll
+C:\Users\navas\Desktop\API_REST\runtimes\win-x64\native\sni.dll
+C:\Users\navas\Desktop\API_REST\runtimes\win-x86\native\sni.dll
+C:\Users\navas\Desktop\API_REST\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\navas\Desktop\API_REST\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\navas\Desktop\API_REST\AccesoDatos.dll
+C:\Users\navas\Desktop\API_REST\Entidades.dll
+C:\Users\navas\Desktop\API_REST\LogicaNegocios.dll
+C:\Users\navas\Desktop\API_REST\Entidades.pdb
+C:\Users\navas\Desktop\API_REST\LogicaNegocios.pdb
+C:\Users\navas\Desktop\API_REST\AccesoDatos.pdb
+C:\Users\navas\Desktop\API_REST\AccesoDatos.dll.config

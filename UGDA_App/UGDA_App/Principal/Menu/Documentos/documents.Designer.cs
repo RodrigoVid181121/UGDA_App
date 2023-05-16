@@ -114,6 +114,7 @@
             // 
             // dgvbuscar
             // 
+            dgvbuscar.AllowUserToAddRows = false;
             dgvbuscar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvbuscar.BackgroundColor = Color.FromArgb(0, 0, 64);
             dgvbuscar.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
@@ -228,11 +229,10 @@
             // 
             // cbSubS
             // 
-            cbSubS.AutoCompleteMode = AutoCompleteMode.Suggest;
+            cbSubS.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cbSubS.AutoCompleteSource = AutoCompleteSource.ListItems;
             cbSubS.BackColor = Color.WhiteSmoke;
             cbSubS.DropDownHeight = 300;
-            cbSubS.DropDownStyle = ComboBoxStyle.DropDownList;
             cbSubS.FlatStyle = FlatStyle.Flat;
             cbSubS.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cbSubS.FormattingEnabled = true;
@@ -292,11 +292,10 @@
             // 
             // cbUnidad
             // 
-            cbUnidad.AutoCompleteMode = AutoCompleteMode.Suggest;
+            cbUnidad.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             cbUnidad.AutoCompleteSource = AutoCompleteSource.ListItems;
             cbUnidad.BackColor = Color.WhiteSmoke;
             cbUnidad.DropDownHeight = 300;
-            cbUnidad.DropDownStyle = ComboBoxStyle.DropDownList;
             cbUnidad.FlatStyle = FlatStyle.Flat;
             cbUnidad.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cbUnidad.FormattingEnabled = true;

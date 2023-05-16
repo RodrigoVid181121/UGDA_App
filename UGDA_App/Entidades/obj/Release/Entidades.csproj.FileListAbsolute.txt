@@ -1,0 +1,9 @@
+C:\Users\navas\Desktop\UGDA\UGDA_App\Entidades\bin\Release\Entidades.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\Entidades\bin\Release\Entidades.pdb
+C:\Users\navas\Desktop\UGDA\UGDA_App\Entidades\bin\Release\System.Data.SqlClient.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\Entidades\bin\Release\System.Data.SqlClient.xml
+C:\Users\navas\Desktop\UGDA\UGDA_App\Entidades\obj\Release\Entidades.csproj.AssemblyReference.cache
+C:\Users\navas\Desktop\UGDA\UGDA_App\Entidades\obj\Release\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\navas\Desktop\UGDA\UGDA_App\Entidades\obj\Release\Entidades.csproj.CopyComplete
+C:\Users\navas\Desktop\UGDA\UGDA_App\Entidades\obj\Release\Entidades.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\Entidades\obj\Release\Entidades.pdb

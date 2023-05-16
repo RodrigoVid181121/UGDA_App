@@ -1,0 +1,6 @@
+C:\Users\navas\Desktop\Nueva carpeta (4)\sni.dll
+C:\Users\navas\Desktop\Nueva carpeta (4)\Entidades.pdb
+C:\Users\navas\Desktop\Nueva carpeta (4)\LogicaNegocios.pdb
+C:\Users\navas\Desktop\Nueva carpeta (4)\AccesoDatos.pdb
+C:\Users\navas\Desktop\Nueva carpeta (4)\AccesoDatos.dll.config
+C:\Users\navas\Desktop\Nueva carpeta (4)\UGDA_App.exe

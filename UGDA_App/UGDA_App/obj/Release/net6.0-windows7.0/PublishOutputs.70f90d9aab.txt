@@ -1,0 +1,17 @@
+C:\Users\navas\Desktop\UGDA_APP_FINAL\UGDA_App.exe
+C:\Users\navas\Desktop\UGDA_APP_FINAL\UGDA_App.dll
+C:\Users\navas\Desktop\UGDA_APP_FINAL\UGDA_App.deps.json
+C:\Users\navas\Desktop\UGDA_APP_FINAL\UGDA_App.runtimeconfig.json
+C:\Users\navas\Desktop\UGDA_APP_FINAL\System.Data.SqlClient.dll
+C:\Users\navas\Desktop\UGDA_APP_FINAL\runtimes\win-arm64\native\sni.dll
+C:\Users\navas\Desktop\UGDA_APP_FINAL\runtimes\win-x64\native\sni.dll
+C:\Users\navas\Desktop\UGDA_APP_FINAL\runtimes\win-x86\native\sni.dll
+C:\Users\navas\Desktop\UGDA_APP_FINAL\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\navas\Desktop\UGDA_APP_FINAL\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\navas\Desktop\UGDA_APP_FINAL\AccesoDatos.dll
+C:\Users\navas\Desktop\UGDA_APP_FINAL\Entidades.dll
+C:\Users\navas\Desktop\UGDA_APP_FINAL\LogicaNegocios.dll
+C:\Users\navas\Desktop\UGDA_APP_FINAL\Entidades.pdb
+C:\Users\navas\Desktop\UGDA_APP_FINAL\LogicaNegocios.pdb
+C:\Users\navas\Desktop\UGDA_APP_FINAL\AccesoDatos.pdb
+C:\Users\navas\Desktop\UGDA_APP_FINAL\AccesoDatos.dll.config

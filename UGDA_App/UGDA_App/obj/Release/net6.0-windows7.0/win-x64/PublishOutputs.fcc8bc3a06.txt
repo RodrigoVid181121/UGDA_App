@@ -1,0 +1,6 @@
+C:\Users\navas\Desktop\Realase\sni.dll
+C:\Users\navas\Desktop\Realase\Entidades.pdb
+C:\Users\navas\Desktop\Realase\LogicaNegocios.pdb
+C:\Users\navas\Desktop\Realase\AccesoDatos.pdb
+C:\Users\navas\Desktop\Realase\AccesoDatos.dll.config
+C:\Users\navas\Desktop\Realase\UGDA_App.exe
