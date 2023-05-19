@@ -93,3 +93,17 @@ C:\Users\navas\Desktop\Nueva carpeta (3)\UGDA_App\LogicaNegocios\obj\Debug\Logic
 C:\Users\navas\Desktop\Nueva carpeta (3)\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.csproj.CopyComplete
 C:\Users\navas\Desktop\Nueva carpeta (3)\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.dll
 C:\Users\navas\Desktop\Nueva carpeta (3)\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.pdb
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Debug\LogicaNegocios.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Debug\LogicaNegocios.pdb
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Debug\AccesoDatos.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Debug\Entidades.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Debug\System.Data.SqlClient.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Debug\AccesoDatos.pdb
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Debug\AccesoDatos.dll.config
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Debug\Entidades.pdb
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\bin\Debug\System.Data.SqlClient.xml
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.csproj.AssemblyReference.cache
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.csproj.CoreCompileInputs.cache
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.csproj.CopyComplete
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.dll
+C:\Users\navas\Desktop\UGDA\UGDA_App\LogicaNegocios\obj\Debug\LogicaNegocios.pdb

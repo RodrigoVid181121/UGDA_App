@@ -1,5 +1,6 @@
 using Entidades.Usuarios;
 using LogicaNegocios.Usuarios;
+using LogicaNegocios.Encrypt;
 
 namespace UGDA_App
 {
@@ -47,7 +48,7 @@ namespace UGDA_App
                 objUsuario = new ClsUsuario()
                 {
                     Carnet = txtuser.Text,
-                    Contraseña = txtpass.Text
+                    Contraseña = ClsEncrypt.GETSHA256(txtpass.Text) 
                 };
 
                 objUser.Login(ref objUsuario);

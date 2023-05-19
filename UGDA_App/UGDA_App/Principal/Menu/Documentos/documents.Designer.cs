@@ -145,7 +145,7 @@
             // 
             cmbfiltro.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
             cmbfiltro.FormattingEnabled = true;
-            cmbfiltro.Items.AddRange(new object[] { "Código", "Año", "Ubicación", "Descripción" });
+            cmbfiltro.Items.AddRange(new object[] { "Código", "Año", "Ubicación", "Descripción", "Unidad" });
             cmbfiltro.Location = new Point(427, 15);
             cmbfiltro.Name = "cmbfiltro";
             cmbfiltro.Size = new Size(151, 31);

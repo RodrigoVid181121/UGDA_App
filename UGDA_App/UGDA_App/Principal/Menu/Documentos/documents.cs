@@ -309,21 +309,25 @@ namespace UGDA_App
         {
             if (cmbfiltro.SelectedIndex == 0)
             {
-                objDocument.DtResults.DefaultView.RowFilter = $"ID LIKE '{txtbuscar.Text}%'";
+                objDocument.DtResults.DefaultView.RowFilter = $"ID LIKE '%{txtbuscar.Text}%'";
             }
 
             if (cmbfiltro.SelectedIndex == 1)
             {
-                objDocument.DtResults.DefaultView.RowFilter = $"Año LIKE '{txtbuscar.Text}%'";
+                objDocument.DtResults.DefaultView.RowFilter = $"Año LIKE '%{txtbuscar.Text}%'";
             }
 
             if (cmbfiltro.SelectedIndex == 2)
             {
-                objDocument.DtResults.DefaultView.RowFilter = $"Ubicación LIKE '{txtbuscar.Text}%'";
+                objDocument.DtResults.DefaultView.RowFilter = $"Ubicación LIKE '%{txtbuscar.Text}%'";
             }
             if (cmbfiltro.SelectedIndex == 3)
             {
-                objDocument.DtResults.DefaultView.RowFilter = $"Descripción LIKE '{txtbuscar.Text}%'";
+                objDocument.DtResults.DefaultView.RowFilter = $"Descripción LIKE '%{txtbuscar.Text}%'";
+            }
+            if (cmbfiltro.SelectedIndex == 4)
+            {
+                objDocument.DtResults.DefaultView.RowFilter = $"Unidad LIKE '%{txtbuscar.Text}%'";
             }
         }
 

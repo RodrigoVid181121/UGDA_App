@@ -1,18 +1,9 @@
-﻿//using UGDA_App.Forms.Clases;
-using Entidades.Cargos;
+﻿using Entidades.Cargos;
 using Entidades.Usuarios;
+using LogicaNegocios.Encrypt;
 using LogicaNegocios.Usuarios;
 using LogicaNegocios.Validaciones;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace UGDA_App
 {
@@ -116,7 +107,7 @@ namespace UGDA_App
                         Apellido = txtapellido.Text,
                         Correo = txtcorreo.Text,
                         Carnet = txtcarnet.Text,
-                        Contraseña = txtcontra.Text
+                        Contraseña = ClsEncrypt.GETSHA256(txtcontra.Text)
                     };
                     objCargo = new ClsCargo()
                     {
@@ -204,7 +195,7 @@ namespace UGDA_App
                             Apellido = txtapellido.Text,
                             Correo = txtcorreo.Text,
                             Carnet = txtcarnet.Text,
-                            Contraseña = txtcontra.Text
+                            Contraseña = ClsEncrypt.GETSHA256(txtcontra.Text)
                         };
                         objCargo = new ClsCargo()
                         {
