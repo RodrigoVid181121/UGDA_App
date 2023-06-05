@@ -11,8 +11,11 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("UGDA_App")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Virtual Solutions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("Todos los derechos reservados para Virtual Solutions")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Aplicación para la gestión y la documentación de archivos y documentos de la UGDA" +
+    " en santa ana\r\n")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("UGDA_App")]

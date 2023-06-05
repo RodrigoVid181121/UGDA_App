@@ -26,7 +26,7 @@ namespace UGDA_App
 
         private void btnshow_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void pcView_Click(object sender, EventArgs e)
@@ -43,24 +43,24 @@ namespace UGDA_App
 
         private void pbIniciar_Click(object sender, EventArgs e)
         {
-            if (txtuser.Text!="" && txtpass.Text!="")
+            if (txtuser.Text != "" && txtpass.Text != "")
             {
                 objUsuario = new ClsUsuario()
                 {
                     Carnet = txtuser.Text,
-                    Contraseña = ClsEncrypt.GETSHA256(txtpass.Text) 
+                    Contraseña = ClsEncrypt.GETSHA256(txtpass.Text)
                 };
 
                 objUser.Login(ref objUsuario);
 
-                if(objUsuario.ErrorMessage == null)
+                if (objUsuario.ErrorMessage == null)
                 {
-                    if(objUsuario.Id_cargo == 1 || objUsuario.Id_cargo == 2)
-                    {                        
+                    if (objUsuario.Id_cargo == 1 || objUsuario.Id_cargo == 2)
+                    {
                         frMain.Show();
                         this.Hide();
                     }
-                    else if(objUsuario.Id_cargo == 3 || objUsuario.Id_cargo == 4)
+                    else if (objUsuario.Id_cargo == 3 || objUsuario.Id_cargo == 4)
                     {
                         frMain.btnbitacora.Visible = false;
                         frMain.btnuser.Visible = false;
@@ -78,13 +78,13 @@ namespace UGDA_App
                 {
                     MessageBox.Show(objUsuario.ErrorMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                
+
             }
-            else if(txtuser.Text=="")
+            else if (txtuser.Text == "")
             {
                 errorProvider1.SetError(txtuser, "Por favor complete este campo para continuar");
             }
-            else if(txtpass.Text=="")
+            else if (txtpass.Text == "")
             {
                 errorProvider1.SetError(txtpass, "Por favor complete este campo para continuar");
             }

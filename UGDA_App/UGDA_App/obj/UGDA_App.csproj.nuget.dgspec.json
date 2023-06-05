@@ -108,13 +108,13 @@
               "target": "Package",
               "version": "[4.8.5, )"
             },
-            "iTextSharp": {
+            "itext7": {
               "target": "Package",
-              "version": "[5.5.13.3, )"
+              "version": "[7.2.1, )"
             },
-            "itextsharp.xmlworker": {
+            "itext7.pdfhtml": {
               "target": "Package",
-              "version": "[5.5.13.3, )"
+              "version": "[4.0.0, )"
             }
           },
           "imports": [
@@ -136,7 +136,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

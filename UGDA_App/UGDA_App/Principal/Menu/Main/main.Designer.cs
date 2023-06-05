@@ -63,10 +63,10 @@
             panel3.Controls.Add(btnExit);
             panel3.Controls.Add(lbtitulo);
             panel3.Dock = DockStyle.Top;
-            panel3.Location = new Point(219, 0);
+            panel3.Location = new Point(221, 0);
             panel3.Margin = new Padding(2, 1, 2, 1);
             panel3.Name = "panel3";
-            panel3.Size = new Size(791, 44);
+            panel3.Size = new Size(789, 44);
             panel3.TabIndex = 3;
             // 
             // btnmin
@@ -78,7 +78,7 @@
             btnmin.FlatStyle = FlatStyle.Flat;
             btnmin.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnmin.ForeColor = Color.WhiteSmoke;
-            btnmin.Location = new Point(692, 0);
+            btnmin.Location = new Point(690, 0);
             btnmin.Margin = new Padding(2, 1, 2, 1);
             btnmin.Name = "btnmin";
             btnmin.Size = new Size(33, 44);
@@ -96,7 +96,7 @@
             btnmax.FlatStyle = FlatStyle.Flat;
             btnmax.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnmax.ForeColor = Color.WhiteSmoke;
-            btnmax.Location = new Point(725, 0);
+            btnmax.Location = new Point(723, 0);
             btnmax.Margin = new Padding(2, 1, 2, 1);
             btnmax.Name = "btnmax";
             btnmax.Size = new Size(33, 44);
@@ -114,7 +114,7 @@
             btnExit.FlatStyle = FlatStyle.Flat;
             btnExit.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnExit.ForeColor = Color.WhiteSmoke;
-            btnExit.Location = new Point(758, 0);
+            btnExit.Location = new Point(756, 0);
             btnExit.Margin = new Padding(2, 1, 2, 1);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(33, 44);
@@ -132,7 +132,7 @@
             lbtitulo.Location = new Point(0, 0);
             lbtitulo.Margin = new Padding(2, 0, 2, 0);
             lbtitulo.Name = "lbtitulo";
-            lbtitulo.Size = new Size(791, 44);
+            lbtitulo.Size = new Size(789, 44);
             lbtitulo.TabIndex = 5;
             lbtitulo.Text = "Inicio";
             lbtitulo.TextAlign = ContentAlignment.MiddleCenter;
@@ -153,7 +153,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(2, 1, 2, 1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(219, 550);
+            panel1.Size = new Size(221, 550);
             panel1.TabIndex = 2;
             panel1.MouseEnter += panel1_MouseEnter;
             // 
@@ -179,7 +179,7 @@
             btnbitacora.Location = new Point(0, 314);
             btnbitacora.Margin = new Padding(2, 1, 2, 1);
             btnbitacora.Name = "btnbitacora";
-            btnbitacora.Size = new Size(219, 64);
+            btnbitacora.Size = new Size(221, 64);
             btnbitacora.TabIndex = 6;
             btnbitacora.Text = "Bitacora       ";
             btnbitacora.TextAlign = ContentAlignment.MiddleRight;
@@ -201,7 +201,7 @@
             btnCerrar.Location = new Point(0, 486);
             btnCerrar.Margin = new Padding(2, 1, 2, 1);
             btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(216, 64);
+            btnCerrar.Size = new Size(219, 64);
             btnCerrar.TabIndex = 5;
             btnCerrar.Text = "  Cerrar sesion";
             btnCerrar.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -222,7 +222,7 @@
             btnuser.Location = new Point(0, 250);
             btnuser.Margin = new Padding(2, 1, 2, 1);
             btnuser.Name = "btnuser";
-            btnuser.Size = new Size(219, 64);
+            btnuser.Size = new Size(221, 64);
             btnuser.TabIndex = 4;
             btnuser.Text = "Usuarios       ";
             btnuser.TextAlign = ContentAlignment.MiddleRight;
@@ -244,7 +244,7 @@
             btndocs.Location = new Point(0, 188);
             btndocs.Margin = new Padding(2, 1, 2, 1);
             btndocs.Name = "btndocs";
-            btndocs.Size = new Size(219, 62);
+            btndocs.Size = new Size(221, 62);
             btndocs.TabIndex = 2;
             btndocs.Text = "Documentos";
             btndocs.TextAlign = ContentAlignment.MiddleRight;
@@ -266,7 +266,7 @@
             btnInicio.Location = new Point(0, 126);
             btnInicio.Margin = new Padding(2, 1, 2, 1);
             btnInicio.Name = "btnInicio";
-            btnInicio.Size = new Size(219, 62);
+            btnInicio.Size = new Size(221, 62);
             btnInicio.TabIndex = 1;
             btnInicio.Text = " Inicio            ";
             btnInicio.TextAlign = ContentAlignment.MiddleRight;
@@ -285,7 +285,7 @@
             panel2.Location = new Point(0, 0);
             panel2.Margin = new Padding(2, 1, 2, 1);
             panel2.Name = "panel2";
-            panel2.Size = new Size(219, 126);
+            panel2.Size = new Size(221, 126);
             panel2.TabIndex = 1;
             panel2.MouseEnter += panel2_MouseEnter;
             // 
@@ -296,7 +296,7 @@
             pbUser.Location = new Point(0, 0);
             pbUser.Margin = new Padding(2, 1, 2, 1);
             pbUser.Name = "pbUser";
-            pbUser.Size = new Size(219, 77);
+            pbUser.Size = new Size(221, 77);
             pbUser.SizeMode = PictureBoxSizeMode.Zoom;
             pbUser.TabIndex = 1;
             pbUser.TabStop = false;
@@ -309,7 +309,7 @@
             lbUser.Location = new Point(0, 89);
             lbUser.Margin = new Padding(2, 0, 2, 0);
             lbUser.Name = "lbUser";
-            lbUser.Size = new Size(219, 37);
+            lbUser.Size = new Size(221, 37);
             lbUser.TabIndex = 0;
             lbUser.Text = "Username";
             lbUser.TextAlign = ContentAlignment.MiddleCenter;
@@ -348,10 +348,10 @@
             pnPri.BackColor = Color.FromArgb(0, 27, 89);
             pnPri.Controls.Add(label1);
             pnPri.Dock = DockStyle.Fill;
-            pnPri.Location = new Point(219, 44);
+            pnPri.Location = new Point(221, 44);
             pnPri.Margin = new Padding(2, 1, 2, 1);
             pnPri.Name = "pnPri";
-            pnPri.Size = new Size(791, 506);
+            pnPri.Size = new Size(789, 506);
             pnPri.TabIndex = 4;
             // 
             // label1

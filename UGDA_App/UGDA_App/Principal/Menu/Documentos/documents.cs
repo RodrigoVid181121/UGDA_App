@@ -7,14 +7,17 @@ using LogicaNegocios.Subseries;
 using LogicaNegocios.Unidad_Productora;
 using LogicaNegocios;
 using LogicaNegocios.Validaciones;
-using iTextSharp.text.pdf;
-using iTextSharp.text;
-using iTextSharp.tool.xml;
+using iText.Kernel.Pdf;
+using iText.Layout;
+using iText.Layout.Element;
+using iText.Html2pdf;
+using iText.Kernel.Geom;
 
 namespace UGDA_App
 {
     public partial class documents : Form
     {
+        #region Declaración de variables
         private ClsDocument objDocument = null;
         private ClsUsuario objUser = null;
         private ClsSubSerie objSubSerie = null;
@@ -24,6 +27,8 @@ namespace UGDA_App
         private ClsUnidadLn objUnit = new ClsUnidadLn();
         Validaciones val = new Validaciones();
         int pc;
+        string name;
+        #endregion
         public documents()
         {
             InitializeComponent();
@@ -242,14 +247,19 @@ namespace UGDA_App
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private async void button2_Click(object sender, EventArgs e)
         {
-            SaveFileDialog savefile = new SaveFileDialog();
-            savefile.FileName = string.Format("{0}.pdf", DateTime.Now.ToString("ddMMyyyyHHmmss"));
+            Task task = new Task(GenerateReport);
+            task.Start();
+            await task;
+        }
 
+        private void GenerateReport()
+        {
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\Reportes\";
 
+            name = string.Format("{0}.pdf", DateTime.Now.ToString("ddMMyyyyHHmmss"));
 
-            //string PaginaHTML_Texto = "<table border=\"1\"><tr><td>HOLA MUNDO</td></tr></table>";
             string PaginaHTML_Texto = Properties.Resources.Plantilla.ToString();
             PaginaHTML_Texto = PaginaHTML_Texto.Replace("@USUARIO", Global.nombre_usuario);
             PaginaHTML_Texto = PaginaHTML_Texto.Replace("@FECHA", DateTime.Now.ToString("dd/MM/yyyy"));
@@ -260,7 +270,7 @@ namespace UGDA_App
                 filas += "<tr>";
                 filas += "<td>" + row.Cells["Serie"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["Subserie"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Unidad productora"].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["Unidad"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["Descripción"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["Codigo"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["Año"].Value.ToString() + "</td>";
@@ -269,37 +279,19 @@ namespace UGDA_App
             }
             PaginaHTML_Texto = PaginaHTML_Texto.Replace("@FILAS", filas);
 
-
-
-            if (savefile.ShowDialog() == DialogResult.OK)
+            var ubi = System.IO.Path.Combine(path, name);
+            //Creamos un nuevo documento y lo definimos como PDF
+            using (var pdfWriter = new PdfWriter(ubi))
             {
-                using (FileStream stream = new FileStream(savefile.FileName, FileMode.Create))
+                using (var pdf = new PdfDocument(pdfWriter))
                 {
-                    //Creamos un nuevo documento y lo definimos como PDF
-                    Document pdfDoc = new Document(PageSize.A4, 25, 25, 25, 25);
-
-                    PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
-                    pdfDoc.Open();
-                    pdfDoc.Add(new Phrase(""));
-
-                    //Agregamos la imagen del banner al documento
-                    //iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(Properties.Resources.shop, System.Drawing.Imaging.ImageFormat.Png);
-                    //img.ScaleToFit(60, 60);
-                    //img.Alignment = iTextSharp.text.Image.UNDERLYING;
-
-                    //img.SetAbsolutePosition(10,100);
-                    //img.SetAbsolutePosition(pdfDoc.LeftMargin, pdfDoc.Top - 60);
-                    //pdfDoc.Add(img);
-
-
-                    //pdfDoc.Add(new Phrase("Hola Mundo"));
-                    using (StringReader sr = new StringReader(PaginaHTML_Texto))
-                    {
-                        XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
-                    }
-
-                    pdfDoc.Close();
-                    stream.Close();
+                    var doc = new Document(pdf, PageSize.A4);
+                    doc.SetMargins(25, 25, 25, 25);
+                    doc.Add(new Paragraph(""));
+                    ConverterProperties converterProperties = new ConverterProperties();
+                    HtmlConverter.ConvertToPdf(PaginaHTML_Texto, pdf, converterProperties);
+                    MessageBox.Show("El documento se creó con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    doc.Close();
                 }
 
             }
